@@ -1,0 +1,10 @@
+@import url(../node_modules/sanitize.css/sanitize.css);
+
+header {
+  background-color:blanchedalmond;
+}
+
+.profile-log-img {
+  width: 120px;
+  height: 40px;
+}

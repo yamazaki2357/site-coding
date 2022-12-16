@@ -1,0 +1,11 @@
+@import url(./node_modules/sanitize.css/sanitize.css);
+
+h1 {
+    color: red;
+    font-size: 18px;
+}
+
+.test-img {
+    max-width: 140px;
+    width: 20%;
+}
