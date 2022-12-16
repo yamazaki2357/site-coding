@@ -1,10 +1,58 @@
 @import url(../node_modules/sanitize.css/sanitize.css);
 
+/* --------- 全体用 --------- */
+body {
+  background-color:dimgrey;
+}
+.container {
+  width: 900px;
+  margin: 0 auto;
+  background-color: rgb(240, 172, 172);
+}
+
+/* floatの高さ消失を解除する */
+/* .clear {
+  clear: right;
+} */
+
+/* --------- メインヘッダー --------- */
+.main-header {
+  /* background-color:beige; */
+  height: 90px;
+  text-align: center;
+}
+
+.main-header h1 {
+  margin: 0px;
+}
+/* --------- ヘッダー --------- */
 header {
-  background-color:blanchedalmond;
+  background-color:rgb(247, 247, 246);
+  height: 60px;
+  margin: 0 auto;
+}
+
+.header-left {
+  float: left;
 }
 
 .profile-log-img {
   width: 120px;
   height: 40px;
+  margin: 10px 0;
 }
+
+.header-right {
+  float: right;
+}
+
+.header-right a {
+  text-decoration: none;
+  color: black;
+  line-height: 60px;
+  margin-left: 15px;
+}
+
+/* --------- hogehoge --------- */
+/* --------- hogehoge --------- */
+/* --------- hogehoge --------- */
