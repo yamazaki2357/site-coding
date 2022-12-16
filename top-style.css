@@ -4,7 +4,7 @@
 /* --------- 全体用 --------- */
 body {
     background-color: #ffff;
-    font-family: "Hiragino Kaku Gothic ProN"
+    font-family: "Hiragino Gothic ProN"
 }
 
 h2 {
@@ -25,6 +25,10 @@ ul {
     padding: 0;
 }
 
+li {
+  list-style:none
+}
+
 .container {
     max-width: 900px;
     margin: 0 auto;
@@ -38,4 +42,26 @@ ul {
 
 .main-header h1 {
     margin: 0px;
+}
+/* --------- テスト --------- */
+.test-img {
+    width: 100%;
+    border: 1px solid black;
+}
+
+.main-content-wrapper ul {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.main-content-wrapper li {
+  width: 20%;
+  margin: 0 20px;
+}
+
+/* --------- import-profile-site --------- */
+.import-profile-site {
+  width: 100%;
+  /* TODO:高さ仮置き */
+  height: 2000px;
 }
