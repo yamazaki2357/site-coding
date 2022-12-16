@@ -2,22 +2,29 @@
 
 /* --------- 全体用 --------- */
 body {
-  background-color:dimgrey;
+  background-color:rgb(242, 242, 242);
+  font-family: "Hiragino Kaku Gothic ProN"
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 14px;
 }
 .container {
   width: 900px;
   margin: 0 auto;
-  background-color: rgb(240, 172, 172);
+  /* background-color: rgb(244, 226, 226); */
 }
-
-/* floatの高さ消失を解除する */
-/* .clear {
-  clear: right;
-} */
 
 /* --------- メインヘッダー --------- */
 .main-header {
-  /* background-color:beige; */
   height: 90px;
   text-align: center;
 }
@@ -53,6 +60,41 @@ header {
   margin-left: 15px;
 }
 
-/* --------- hogehoge --------- */
-/* --------- hogehoge --------- */
-/* --------- hogehoge --------- */
+/* --------- メイン --------- */
+.main {
+  height: 686px;
+}
+
+.main-img {
+  height: 600px;
+  width: 100%;
+}
+
+/* --------- about --------- */
+.section-wrapper {
+  text-align: center;
+}
+
+.section-title {
+  display: inline-block;
+  border-bottom: 1px solid black;
+}
+
+.about-text h3 {
+  display: flex;
+  justify-content: left;
+}
+
+/* TODO:どういう役割なのか調べる */
+.about-section-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 25px;
+}
