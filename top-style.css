@@ -43,27 +43,45 @@ li {
 .main-header h1 {
     margin: 0px;
 } */
-/* --------- テスト --------- */
-.test-img {
-    width: 100%;
-    border: 1px solid black;
+/* --------- サイト一覧 --------- */
+.main-content-wrapper ul {
+  display: flex;
+  justify-content: center;
+  /* flex-direction: row-reverse; */
+}
+
+.main-content-wrapper li {
+  width: 15%;
+  margin: 0 20px;
+  float: left;
+}
+
+/* TODO: レスポンシブにする */
+.coding-img-wrapper {
+  max-width: 340px;
+  /* background-color: red; */
+
+}
+
+.coding-img {
+  max-width: 100%;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.coding-img:hover {
+  transform: translate(-5px, -5px);
+  box-shadow: 5px 5px;
+  transition: 0.1s;
 }
 
 .top-title {
   text-align: center;
 }
 
-.main-content-wrapper ul {
-  display: flex;
-  flex-direction: row-reverse;
-}
 
-.main-content-wrapper li {
-  width: 20%;
-  margin: 0 20px;
-}
 
-/* --------- import-profile-site --------- */
+/* --------- メイン表示 --------- */
 .import-profile-site {
   width: 100%;
   /* TODO:高さ仮置き */
@@ -71,6 +89,29 @@ li {
   display: none;
 }
 
-.profile-btn, .other {
+.btn {
   cursor: pointer;
+}
+
+/* --------- サイドメニュー --------- */
+/* TODO:やってることの理解 */
+.side-menu {
+  writing-mode: vertical-rl;
+  font-weight: 500;
+  position: fixed;
+  justify-content: space-between;
+  top: 0px;
+  right: 0px;
+  display: flex;
+  z-index: 10;
+  border-bottom-left-radius: 18px;
+  background-color: #3A302D;
+  color: white;
+  height: 150px;
+  cursor: pointer;
+}
+
+.side-menu li {
+  padding: 10px 0px 14px 0px;
+  letter-spacing: 0.1em;
 }
