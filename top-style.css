@@ -35,18 +35,22 @@ li {
 }
 
 /* --------- メインヘッダー --------- */
-.main-header {
+/* .main-header {
     height: 90px;
     text-align: center;
 }
 
 .main-header h1 {
     margin: 0px;
-}
+} */
 /* --------- テスト --------- */
 .test-img {
     width: 100%;
     border: 1px solid black;
+}
+
+.top-title {
+  text-align: center;
 }
 
 .main-content-wrapper ul {
@@ -64,4 +68,9 @@ li {
   width: 100%;
   /* TODO:高さ仮置き */
   height: 2000px;
+  display: none;
+}
+
+.profile-btn, .other {
+  cursor: pointer;
 }
