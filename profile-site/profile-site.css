@@ -1,42 +1,13 @@
 @import url(../node_modules/sanitize.css/sanitize.css);
+@import url(../top-style.css);
+@import url(responsive-profile-site.css);
 
-/* --------- 全体用 --------- */
-body {
-  background-color:rgb(242, 242, 242);
-  font-family: "Hiragino Kaku Gothic ProN"
-}
 
-h2 {
-  font-size: 32px;
-}
-
-h3 {
-  font-size: 16px;
-}
-
-p {
-  font-size: 14px;
-}
-.container {
-  width: 900px;
-  margin: 0 auto;
-  /* background-color: rgb(244, 226, 226); */
-}
-
-/* --------- メインヘッダー --------- */
-.main-header {
-  height: 90px;
-  text-align: center;
-}
-
-.main-header h1 {
-  margin: 0px;
-}
 /* --------- ヘッダー --------- */
 header {
-  background-color:rgb(247, 247, 246);
   height: 60px;
   margin: 0 auto;
+  padding: 0 30px;
 }
 
 .header-left {
@@ -66,8 +37,10 @@ header {
 }
 
 .main-img {
+  max-width: 1920px;
   height: 600px;
   width: 100%;
+  object-fit: cover;
 }
 
 /* --------- about --------- */
@@ -75,9 +48,14 @@ header {
   text-align: center;
 }
 
+.about-section {
+  margin-bottom: 100px;
+}
+
 .section-title {
   display: inline-block;
   border-bottom: 1px solid black;
+  margin-bottom: 60px;
 }
 
 .about-text h3 {
@@ -85,7 +63,6 @@ header {
   justify-content: left;
 }
 
-/* TODO:どういう役割なのか調べる */
 .about-section-content {
   display: flex;
   justify-content: center;
@@ -98,3 +75,33 @@ header {
   border-radius: 50%;
   margin-right: 25px;
 }
+
+
+/* --------- bicycle --------- */
+.bicycle-section {
+  margin-bottom: 100px;
+}
+
+.bicycle-section h3 {
+  margin: 10px 0;
+}
+
+.bicycle-section li {
+  display: inline-block;
+  width: 32%;
+  padding: 0 5px;
+}
+
+.bicycle-section img {
+  width: 100%;
+}
+
+/* --------- footer --------- */
+footer {
+  text-align: center;
+}
+
+footer p {
+  font-size: 10px;
+}
+
