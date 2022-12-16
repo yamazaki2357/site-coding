@@ -1,0 +1,41 @@
+@import url(./node_modules/sanitize.css/sanitize.css);
+
+
+/* --------- 全体用 --------- */
+body {
+    background-color: #ffff;
+    font-family: "Hiragino Kaku Gothic ProN"
+}
+
+h2 {
+    font-size: 32px;
+    margin: 0;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+p {
+    font-size: 14px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* --------- メインヘッダー --------- */
+.main-header {
+    height: 90px;
+    text-align: center;
+}
+
+.main-header h1 {
+    margin: 0px;
+}

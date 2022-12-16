@@ -1,0 +1,19 @@
+@media(max-width: 600px) {
+  .about-section-content {
+    flex-direction: column;
+
+  }
+  .section-wrapper {
+    padding: 0 15px;
+  }
+  .bicycle-section ul {
+    display: flex;
+    /* TODO:使い方について調べる */
+    flex-direction: column;
+  }
+
+  .bicycle-section li {
+    width: 100% !important;
+    margin-bottom: 30px;
+  }
+}
