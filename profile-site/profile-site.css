@@ -1,7 +1,5 @@
-@import url(../node_modules/sanitize.css/sanitize.css);
-@import url(../top-style.css);
+@import url(../style.css);
 @import url(responsive-profile-site.css);
-
 
 /* --------- ヘッダー --------- */
 header {
@@ -89,7 +87,6 @@ header {
 .bicycle-section li {
   display: inline-block;
   width: 32%;
-  padding: 0 5px;
 }
 
 .bicycle-section img {
