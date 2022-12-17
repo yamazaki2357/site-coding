@@ -44,10 +44,12 @@ li {
     margin: 0px;
 } */
 /* --------- サイト一覧 --------- */
+.main-content-wrapper {
+  border-bottom: 1px solid rgb(141, 139, 139);
+}
 .main-content-wrapper ul {
   display: flex;
   justify-content: center;
-  /* flex-direction: row-reverse; */
 }
 
 .main-content-wrapper li {
@@ -59,8 +61,6 @@ li {
 /* TODO: レスポンシブにする */
 .coding-img-wrapper {
   max-width: 340px;
-  /* background-color: red; */
-
 }
 
 .coding-img {
@@ -79,22 +79,34 @@ li {
   text-align: center;
 }
 
-
-
-/* --------- メイン表示 --------- */
-.import-profile-site {
-  width: 100%;
-  /* TODO:高さ仮置き */
-  height: 2000px;
-  display: none;
-}
-
 .btn {
   cursor: pointer;
 }
 
+/* --------- メイン表示 --------- */
+
+.site-display {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.import-profile-site {
+  width: 100%;
+  /* TODO:高さ仮置き */
+  height: 2000px;
+  /* display: black; */
+}
+
+.small-size {
+  width: 340px;
+}
+
+.pc-size {
+  width: 100%;
+}
+
 /* --------- サイドメニュー --------- */
-/* TODO:やってることの理解 */
+
 .side-menu {
   writing-mode: vertical-rl;
   font-weight: 500;
@@ -104,17 +116,17 @@ li {
   right: 0px;
   display: flex;
   z-index: 10;
-  border-bottom-left-radius: 18px;
   background-color: #3A302D;
   color: white;
   height: 180px;
   cursor: pointer;
-  padding: 10px 0 15px 0;
+  border-bottom-left-radius: 18px;
 }
 
 .side-menu li {
-  padding: 7px 0px 14px 0px;
+  padding: 10px 0px 23px 0px;
   letter-spacing: 0.2em;
+  border-bottom-left-radius: 18px;
 }
 
 .side-menu li:hover {
