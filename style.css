@@ -33,8 +33,8 @@ li {
 }
 
 .container {
-    max-width: 900px;
-    margin: 0 auto;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 /* --------- メインヘッダー --------- */
@@ -62,14 +62,19 @@ li {
 }
 
 /* TODO: レスポンシブにする */
-.img-wrapper {
+.img-btn {
+  cursor: pointer;
   max-width: 340px;
   max-height: 340px;
 }
 
 .site-img {
+  width: 30vw;
+  height: 15vw;
+  object-fit: cover;
   max-width: 100%;
-  border: 1px solid black;
+  vertical-align: bottom;
+  border: 1px solid #ccc;
 }
 
 .site-img:hover {
@@ -82,27 +87,20 @@ li {
   text-align: center;
 }
 
-.btn {
-  cursor: pointer;
+.site-title p {
+  font-size: 12px;
 }
 
 /* --------- メイン表示 --------- */
-.hidden {
-  display: none;
-}
-
-.display {
-  display: block;
-}
-
 .site-display {
   width: 100%;
   margin: 0 auto;
+  display: none;
 }
 
 .import-site {
   width: 100%;
-  height: 1650px;
+  height: 1800px;
 }
 
 .small-size {
@@ -111,6 +109,10 @@ li {
 
 .pc-size {
   width: 100%;
+}
+
+.active {
+  display: block;
 }
 
 /* --------- サイドメニュー --------- */

@@ -1,13 +1,11 @@
 $(function() {
-  // メイン表示切り替え
-  $('.profile-btn').click(function() {
-    $('.import-profile-site').css('display', 'block');
-  });
+  // メインエリア表示切り替え
+    $('.index-btn').click(function() {
+    $('.active').removeClass('active');
 
-  $('.other').click(function() {
-    $('.import-profile-site').css('display', 'none');
+    var clickedIndex = $('.index-btn').index($(this));
+    $('.site-display').eq(clickedIndex).addClass('active');
   });
-
 
   // スクロールボタン
   $('#top-btn').click(function() {
