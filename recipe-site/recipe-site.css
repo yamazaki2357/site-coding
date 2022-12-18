@@ -1,5 +1,4 @@
 @import url(../style.css);
-@import url(responsive-recipe-site.css);
 
 body {
   font-family: "Helvetica Neue",Arial,"Hiragino Sans",Meiryo,sans-serif;
@@ -26,7 +25,7 @@ dl {
 }
 
 dt {
-  width: 80%;
+  width: 85%;
   border-bottom: 1px dotted #ccc;
   padding: 6px 0;
 }
@@ -38,10 +37,10 @@ dd {
   border-bottom: 1px dotted #ccc;
 }
 
-.main {
-  display: flex;
-  justify-content: center;
+main {
+  display: block;
   margin-bottom: 60px;
+  width: 100%;
 }
 
 .flex {
@@ -54,9 +53,9 @@ dd {
 
 .recipe-img img{
   max-width: 100%;
-  object-fit: cover;
   width: 100%;
   height: 700px;
+  object-fit: cover;
   vertical-align: bottom;
 }
 
@@ -73,7 +72,7 @@ dd {
   list-style-type: decimal;
   border-bottom: 1px dotted #ccc;
   padding: 6px 0;
-  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .recipe-text h2 {
@@ -114,3 +113,4 @@ footer li {
 footer p {
   font-size: 12px;
 }
+

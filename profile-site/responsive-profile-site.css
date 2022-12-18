@@ -8,7 +8,6 @@
   }
   .bicycle-section ul {
     display: flex;
-    /* TODO:使い方について調べる */
     flex-direction: column;
   }
 

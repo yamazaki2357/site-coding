@@ -1,0 +1,17 @@
+@media(max-width: 600px) {
+  .flex {
+    flex-direction: column;
+  }
+
+  .recipe-img {
+    width: 100%;
+  }
+
+  .recipe-img img {
+    height: auto;
+  }
+
+  .recipe-text {
+    width: auto;
+  }
+}
