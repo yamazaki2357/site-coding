@@ -1,0 +1,102 @@
+@import url(../style.css);
+@import url(responsive-recipe-site.css);
+
+body {
+  font-family: "Helvetica Neue",Arial,"Hiragino Sans",Meiryo,sans-serif;
+  color: #2b2a27;
+}
+
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+dl, dt, dd, li {
+  font-size: 16px;
+}
+
+dl {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+dt {
+  width: 80%;
+  border-bottom: 1px dotted #ccc;
+  padding: 6px 0;
+}
+
+dd {
+  width: 15%;
+  flex-wrap: wrap;
+  text-align: right;
+  border-bottom: 1px dotted #ccc;
+}
+
+.main {
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.recipe-img img{
+  height: 700px;
+}
+
+.recipe-text {
+  padding: 40px 5% 0 5%;
+}
+
+.recipe-text p {
+  font-size: 16px;
+}
+
+.recipe-text li {
+  list-style-type: decimal;
+  border-bottom: 1px dotted #ccc;
+  padding: 6px 0;
+  margin-right: 20px;
+}
+
+.recipe-text h2 {
+  margin: 40px 0 15px 0;
+}
+
+.recipe-btn {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.recipe-btn a {
+  font-size: 14px;
+  border: 1px solid black;
+  display: inline-block;
+  padding: 18px 60px;
+  color: #2b2a27;
+}
+
+footer {
+  color: #2b2a27;
+  padding: 20px;
+  text-align: center;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+footer li {
+  font-size: 12px;
+  border-bottom: 1px solid black;
+  margin: 0 10px;
+}
+
+footer p {
+  font-size: 12px;
+}
