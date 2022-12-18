@@ -62,17 +62,17 @@ li {
 }
 
 /* TODO: レスポンシブにする */
-.coding-img-wrapper {
+.img-wrapper {
   max-width: 340px;
+  max-height: 340px;
 }
 
-.coding-img {
+.site-img {
   max-width: 100%;
-  width: 100%;
   border: 1px solid black;
 }
 
-.coding-img:hover {
+.site-img:hover {
   transform: translate(-5px, -5px);
   box-shadow: 5px 5px;
   transition: 0.1s;
@@ -87,13 +87,20 @@ li {
 }
 
 /* --------- メイン表示 --------- */
+.hidden {
+  display: none;
+}
+
+.display {
+  display: block;
+}
 
 .site-display {
   width: 100%;
   margin: 0 auto;
 }
 
-.import-profile-site {
+.import-site {
   width: 100%;
   height: 1650px;
 }
