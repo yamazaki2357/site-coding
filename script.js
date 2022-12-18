@@ -29,6 +29,6 @@ $(function() {
   // もっと見るボタン
   $(".more").on("click", function() {
     $(this).toggleClass("on-click");
-    $(".site-hide").slideToggle(1000);
+    $(".site-hide").slideToggle(300);
   });
 });
