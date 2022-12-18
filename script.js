@@ -25,4 +25,10 @@ $(function() {
     $('.site-display').removeClass('small-size');
     $('.site-display').addClass('pc-size');
   });
+
+  // もっと見るボタン
+  $(".more").on("click", function() {
+    $(this).toggleClass("on-click");
+    $(".site-hide").slideToggle(1000);
+  });
 });

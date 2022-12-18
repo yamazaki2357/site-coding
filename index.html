@@ -8,13 +8,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <title>模写コーディング</title>
   </head>
-  <body>
+  <body id="wrap">
     <header>
     </header>
     <div class="top-title">
       <h1>コーディングしたサイト一覧</h1>
-      <!-- TODO:もっと見る・グラデーションにする -->
     </div>
+    <!-- サイドバー -->
     <ul class="side-menu">
       <li class="small-size-btn">
         <p>スマホ版</p>
@@ -23,7 +23,8 @@
         <p>PC版</p>
       </li>
     </ul>
-    <div class="main-content-wrapper">
+    <!-- コーディングしたサイト一覧 -->
+    <div class="content site-show">
       <ul>
         <li class="index-btn">
           <div class="img-btn">
@@ -43,23 +44,63 @@
         </li>
         <li class="index-btn">
           <div class="img-btn other">
-            <img src="./img/pop_coming_soon.png" class="site-img">
+            <img src="./img/no_image.png" class="site-img">
           </div>
           <div class="site-title">
-            <p>模写サイト</p>
+            <p>模写サイト3</p>
           </div>
         </li>
         <li class="index-btn">
           <div class="img-btn other">
-            <img src="./img/pop_coming_soon.png" class="site-img">
+            <img src="./img/no_image.png" class="site-img">
           </div>
           <div class="site-title">
-            <p>模写サイト</p>
+            <p>模写サイト4</p>
           </div>
         </li>
       </ul>
     </div>
-    <ul>
+    <div class="content site-hide">
+      <ul>
+        <li class="index-btn">
+          <div class="img-btn">
+            <img src="./img/no_image.png" class="site-img">
+          </div>
+          <div class="site-title">
+            <p>模写サイト5</p>
+          </div>
+        </li>
+        <li class="index-btn">
+          <div class="img-btn other">
+            <img src="./img/no_image.png" class="site-img">
+          </div>
+          <div class="site-title">
+            <p>模写サイト6</p>
+          </div>
+        </li>
+        <li class="index-btn">
+          <div class="img-btn other">
+            <img src="./img/no_image.png" class="site-img">
+          </div>
+          <div class="site-title">
+            <p>模写サイト7</p>
+          </div>
+        </li>
+        <li class="index-btn">
+          <div class="img-btn other">
+            <img src="./img/no_image.png" class="site-img">
+          </div>
+          <div class="site-title">
+            <p>模写サイト8</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div more-area>
+      <button class="more"></button>
+    </div>
+    <!-- メイン表示 -->
+    <ul class="main-show">
       <li class="site-display active">
         <iframe src="./profile-site/profile-site.html" frameborder="0" class="import-site"></iframe>
       </li>
@@ -73,12 +114,10 @@
         <iframe src="./recipe-site/recipe-site.html" frameborder="0" class="import-site"></iframe>
       </li>
     </ul>
-
-
+    <!-- 上に戻るボタン -->
     <a id="top-btn" class="page-top" href="#">
       <div class="page-top__arrow"></div>
     </a>
-
     <script type="text/javascript" src="script.js"></script>
   </body>
 </html>

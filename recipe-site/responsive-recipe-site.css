@@ -1,4 +1,8 @@
 @media(max-width: 600px) {
+  h1 {
+    font-size: 23px;
+  }
+
   .flex {
     flex-direction: column;
   }

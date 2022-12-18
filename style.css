@@ -47,15 +47,12 @@ li {
     margin: 0px;
 } */
 /* --------- サイト一覧 --------- */
-.main-content-wrapper {
-  border-bottom: 1px solid rgb(141, 139, 139);
-}
-.main-content-wrapper ul {
+.content ul {
   display: flex;
   justify-content: center;
 }
 
-.main-content-wrapper li {
+.content li {
   width: 15%;
   margin: 0 20px;
   float: left;
@@ -92,6 +89,9 @@ li {
 }
 
 /* --------- メイン表示 --------- */
+.main-show {
+  border-top: 1px solid rgb(141, 139, 139);
+}
 .site-display {
   width: 100%;
   margin: 0 auto;
@@ -175,4 +175,38 @@ li {
   .page-top:hover .page-top__arrow {
     border-color: #3293e7;
   }
+}
+
+/* --------- もっと見るボタン --------- */
+
+.site-hide {
+  display: none;
+}
+
+button.more {
+  width: 120px;
+  margin: 20px auto;
+  display: block;
+  background-color: #fff;
+  color: #666;
+  border: 1px solid #666;
+  padding: 10px 15px;
+  outline: 0;
+  transition: .5s;
+  border-radius: 5px;
+}
+
+button.more:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 3px 3px;
+  transition: 0.2s;
+}
+
+button.more::after {
+  content: "もっと見る";
+  transition: .2s;
+}
+
+button.more.on-click::after {
+  content: "閉じる";
 }
