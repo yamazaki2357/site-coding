@@ -1,2 +1,53 @@
 @import url(../style.css);
 @import url(responsive-portfolio-site.css);
+
+/* 全体 */
+section {
+  max-width: 960px;
+  margin: 0 auto 130px auto;
+}
+
+/* ヘッダー */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 270px;
+}
+
+header h2 {
+  font-size: 36px;
+}
+
+.header-left {}
+
+.header-right {}
+
+.header-right ul {
+  display: flex;
+}
+
+.header-right img {
+  width: 20px;
+  height: 20px;
+}
+/* メイン画像 */
+.main-img {
+  width: 100%;
+}
+
+.main-img img {
+  width: 100%;
+  max-width: 100%;
+  height: 420px;
+  object-fit: cover;
+}
+/* about */
+
+section.about {
+  width: 100%;
+}
+
+section.about h2 {
+  text-align: center;
+}
