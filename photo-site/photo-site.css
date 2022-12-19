@@ -1,0 +1,105 @@
+@import url(../style.css);
+@import url(responsive-photo-site.css);
+
+body {
+  background-color: #f4f9ff;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header img {
+  height: 18px;
+  width: 180px;
+  margin: 60px 0 5px 0;
+}
+
+.img-area {
+  padding: 0 10px;
+  margin-bottom: 60px;
+}
+
+.img-area img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.index-area {
+  background-color: #fff;
+  padding: 30px 0;
+  margin-bottom: 60px;
+}
+
+.inner {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.index-area .inner h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.index-area .inner ol {
+  margin: 0 0 0 20px;
+}
+
+.index-area .inner li {
+  list-style-type: decimal;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.index-area .inner li:last-child {
+  margin-bottom: 0px;
+}
+
+.detail-area {
+  
+}
+
+.detail-area h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.detail-area img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.detail-area dl {
+  padding: 16px 0;
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+}
+
+.detail-area dt {
+  width: 25%;
+}
+.detail-area dd {
+  width: 75%;
+}
+
+.detail-area a {
+  color: #333;
+  font-size: 14px;
+}
+
+footer {
+  margin-top: 100px;
+  padding: 10px 0;
+}
+
+footer p {
+  font-size: 10px;
+}
