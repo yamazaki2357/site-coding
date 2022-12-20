@@ -73,7 +73,6 @@ li {
 .site-img {
   width: 30vw;
   height: 15vw;
-  /* object-fit: cover; */
   object-fit: contain;
   max-width: 100%;
   vertical-align: bottom;
@@ -81,10 +80,15 @@ li {
   background-color: rgb(239, 239, 239);
 }
 
-.site-img:hover {
-  transform: translate(-5px, -5px);
+.img-btn:hover {
+  transform: translate(-1px, -3px);
   box-shadow: 5px 5px;
-  transition: 0.1s;
+  transition: 0.01s;
+}
+
+.img-btn:active {
+  transform: translate(1px, 3px);
+  box-shadow: none;
 }
 
 .top-title {
