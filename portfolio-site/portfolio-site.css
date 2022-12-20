@@ -1,11 +1,6 @@
 @import url(../style.css);
 @import url(responsive-portfolio-site.css);
 
-/* 全体 */
-section {
-  max-width: 960px;
-  margin: 0 auto 130px auto;
-}
 
 /* ヘッダー */
 header {
@@ -13,18 +8,24 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 270px;
+  padding: 0 38px;
 }
 
-header h2 {
-  font-size: 36px;
+header h1 {
+  font-size: 27px;
+  font-weight: normal;
 }
 
 .header-left {}
 
-.header-right {}
 
 .header-right ul {
   display: flex;
+}
+
+.header-right li {
+  font-size: 14px;
+  margin-right: 20px;
 }
 
 .header-right img {
@@ -34,6 +35,7 @@ header h2 {
 /* メイン画像 */
 .main-img {
   width: 100%;
+  margin-bottom: 80px;
 }
 
 .main-img img {
@@ -42,12 +44,126 @@ header h2 {
   height: 420px;
   object-fit: cover;
 }
-/* about */
 
-section.about {
-  width: 100%;
+/* 全体 */
+section {
+  max-width: 960px;
+  margin: 0 auto 130px auto;
 }
 
-section.about h2 {
+.wrapper {
+  padding: 0 38px;
+}
+
+section h2 {
   text-align: center;
+  margin-bottom: 65px;
+  font-size: 24px;
+}
+
+/* about */
+.about ul {
+  margin-bottom: 30px;
+  font-size: 14px;
+  padding: 0 15px;
+}
+
+.about li:first-child {
+  margin-bottom: 30px;
+}
+/* works */
+.img-area {
+  max-width: 100%;
+}
+
+.img-area ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  padding: 0 38px;
+}
+
+.img-area ul li {
+  width: 32%;
+}
+
+.img-area img {
+  max-width: 100%;
+  margin-bottom: 23px;
+}
+
+/* News */
+.news dl {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.news dt {
+  border-bottom: 1px solid #c8c8c8;
+  width: 20%;
+  padding: 15px 0;
+}
+
+.news dd {
+  border-bottom: 1px solid #c8c8c8;
+  width: 80%;
+  padding: 15px 0;
+}
+
+.news dt:first-child,
+.news dt:first-child + dd {
+  border-top: 1px solid #c8c8c8;
+}
+
+.news dd:first-child {
+  border-top: 10px solid #c8c8c8;
+}
+
+/* Content */
+.contact {
+  text-align: center;
+}
+
+.contact dl {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.contact dt {
+  width: 15%;
+}
+
+.contact dd input,
+.contact dd textarea {
+  width: 100%;
+  border: solid 1px #c8c8c8;
+  padding: 10px;
+}
+
+.contact dd {
+  width: 85%;
+  margin-bottom: 10px;
+}
+
+.submit-btn {
+  padding: 15px 0;
+  width: 200px;
+  background-color: #24292e;
+  color: #fff;
+  border: solid 1px #24292e;
+}
+
+/* footer */
+footer {
+  padding: 10px 20px;
+  text-align: center;
+  background-color:#24292e;
+  color: #fff;
+}
+
+footer p {
+  font-size: 10px;
+  margin: 0px;
 }
