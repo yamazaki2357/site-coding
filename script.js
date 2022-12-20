@@ -13,7 +13,9 @@ $(function() {
   function adjusted_height() {
     var site_size = document.getElementsByClassName('active'); /* ドキュメントの高さを取得 */
 
-    if (site_size[0].classList.contains("large-site")) {
+    if (site_size[0].classList.contains("very-large-site")) {
+      site_size[0].style.height = "3000px";
+    } else if (site_size[0].classList.contains("large-site")) {
       site_size[0].style.height = "2500px";
     } else if (site_size[0].classList.contains("small-site")) {
       site_size[0].style.height = "1500px";
