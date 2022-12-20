@@ -55,4 +55,5 @@ $(function() {
     $(this).toggleClass("on-click");
     $(".site-hide").slideToggle(300);
   });
+
 });
