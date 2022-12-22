@@ -1,2 +1,25 @@
-@import url(../style.css);
-/*# sourceMappingURL=store-site.css.map */
+header {
+  background-image: url(https://code-step.com/demo/html/store3/img/mainvisual-pc.jpg);
+  width: 100%;
+}
+
+.news {
+  background-color: #E6E2D7;
+}
+
+.new-values {
+  background-color: #E6E2D7;
+}
+
+.harmony {
+  background-color: #E6E2D7;
+}
+
+.bottom-creation {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0);
+  height: 40px;
+}/*# sourceMappingURL=store-site.css.map */

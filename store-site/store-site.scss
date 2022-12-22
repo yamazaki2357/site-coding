@@ -1,0 +1,45 @@
+// 変数定義
+$bg-black: #0000;
+$bg-beige: #E6E2D7;
+
+
+// header
+header {
+  background-image: url(https://code-step.com/demo/html/store3/img/mainvisual-pc.jpg);
+  width: 100%;
+}
+
+// news
+.news {
+  background-color: $bg-beige;
+}
+
+// new-values
+.new-values {
+  background-color: $bg-beige;
+}
+
+// harmony
+.harmony {
+  background-color: $bg-beige;
+}
+
+
+
+
+
+
+
+
+
+
+// .bottom-creation
+.bottom-creation {
+  background-color: $bg-black;
+}
+
+// footer
+footer {
+  background-color: $bg-black;
+  height: 40px;
+}
