@@ -230,3 +230,24 @@ button.more::after {
 button.more.on-click::after {
   content: "閉じる";
 }
+
+.container {
+  max-width: 1380px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.infinite-slider .swiper-wrapper {
+  transition-timing-function: linear;
+  height: 100px;
+}
+
+.infinite-slider .swiper-slide {
+  height: 100px;
+  width: 160px;
+}
+
+.infinite-slider .swiper-slide img {
+  width: auto;
+  height: 100%;
+}

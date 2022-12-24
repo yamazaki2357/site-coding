@@ -55,5 +55,17 @@ $(function() {
     $(this).toggleClass("on-click");
     $(".site-hide").slideToggle(300);
   });
+});
 
+window.addEventListener("DOMContentLoaded", () => {
+  const infiniteSlider = new Swiper(".infinite-slider", {
+    loop: true,
+    loopedSlides: 10,
+    slidesPerView: "auto",
+    speed: 2000,
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false,
+    },
+  });
 });

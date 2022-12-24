@@ -4,14 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <title>模写コーディング</title>
   </head>
   <body id="wrap">
-    <header>
-    </header>
     <div class="top-title">
       <h1 class="animate__animated animate__flip">コーディングしたサイト一覧</h1>
     </div>
@@ -24,6 +22,7 @@
         <p>PC版</p>
       </li>
     </ul>
+    <!-- TODO: スマホ版・PC版それぞれでimg-btnの画像を切り替える -->
     <!-- コーディングしたサイト一覧 -->
     <div class="content site-show">
       <ul>
@@ -100,6 +99,22 @@
     <div more-area>
       <button class="more animate__animated animate__rollIn"></button>
     </div>
+    <div class="container">
+      <div class="swiper infinite-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./img/profile-site.png" alt="画像1" /></div>
+          <div class="swiper-slide"><img src="./img/recipe-site.png" alt="画像2" /></div>
+          <div class="swiper-slide"><img src="./img/photo-site.png" alt="画像3" /></div>
+          <div class="swiper-slide"><img src="./img/portfolio-site.png" alt="画像4" /></div>
+          <div class="swiper-slide"><img src="./img/store-site.png" alt="画像5" /></div>
+          <div class="swiper-slide"><img src="./img/profile-site.png" alt="画像1" /></div>
+          <div class="swiper-slide"><img src="./img/recipe-site.png" alt="画像2" /></div>
+          <div class="swiper-slide"><img src="./img/photo-site.png" alt="画像3" /></div>
+          <div class="swiper-slide"><img src="./img/portfolio-site.png" alt="画像4" /></div>
+          <div class="swiper-slide"><img src="./img/store-site.png" alt="画像5" /></div>
+        </div>
+      </div>
+    </div>
     <!-- メイン表示 -->
     <div class="main-show">
       <div class="site-display active large-site animate__animated animate__slideInLeft">
@@ -122,6 +137,9 @@
     <a id="top-btn" class="page-top" href="#">
       <div class="page-top__arrow"></div>
     </a>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   </body>
 </html>
