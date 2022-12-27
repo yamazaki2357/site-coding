@@ -116,8 +116,10 @@ header {
   background-color: $bg-beige;
   display: flex;
   flex-direction: row-reverse;
-  margin-bottom: 180px;
-  padding: 0 20px 0 20px;
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto 180px auto;
+  // padding: 0 20px 0 20px;
 
   h2 {
     font-size: 32px;
@@ -164,8 +166,10 @@ header {
 .harmony {
   background-color: $bg-beige;
   display: flex;
-  margin-bottom: 180px;
-  padding: 0 20px 0 20px;
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto 180px auto;
+  // padding: 0 20px 0 20px;
 
     h2 {
       font-size: 32px;
@@ -286,6 +290,7 @@ footer {
   }
 
   header {
+    max-height: 600px;
     background-image: url(https://code-step.com/demo/html/store3/img/mainvisual-sp.jpg);
     margin-bottom: 80px;
 
@@ -348,9 +353,15 @@ footer {
       width: 90%;
       margin-top: 70px;
 
+      img {
+        padding-left: 20px;
+        width: 90%;
+      }
+
       p {
-        padding: 30px 40px;
+        padding: 25px 30px;
         font-size: 14px;
+        left: 10px;
       }
     }
   }
@@ -370,10 +381,15 @@ footer {
       width: 90%;
       margin-top: 70px;
 
+      img {
+        padding-right: 20px;
+        width: 90%;
+      }
+
       p {
-        padding: 30px 40px;
+        padding: 25px 30px;
         font-size: 14px;
-        right: -15px;
+        right: 10px;
       }
     }
   }
