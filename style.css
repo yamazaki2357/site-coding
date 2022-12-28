@@ -191,10 +191,10 @@ iframe {
 /* --------- もっと見るボタン --------- */
 
 .site-hide {
-  display: none;
+  display: block;
 }
 
-button.more {
+#more {
   width: 120px;
   margin: 20px auto;
   display: block;
@@ -207,18 +207,18 @@ button.more {
   border-radius: 5px;
 }
 
-button.more:hover {
-  transform: translate(-3px, -3px);
+#more:hover {
+  /* transform: translate(-3px, -3px); */
   box-shadow: 3px 3px;
-  transition: 0.2s;
+  /* transition: 0.2s; */
 }
 
-button.more::after {
+#more::after {
   content: "もっと見る";
-  transition: .2s;
+  /* transition: .2s; */
 }
 
-button.more.on-click::after {
+#more.on-click::after {
   content: "閉じる";
 }
 

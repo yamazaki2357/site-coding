@@ -1,6 +1,6 @@
 $(function() {
   // メインエリア表示切り替え
-    $('.index-btn').click(function() {
+  $('.index-btn').click(function() {
     $('.active').removeClass('active');
 
     var clickedIndex = $('.index-btn').index($(this));
@@ -50,22 +50,31 @@ $(function() {
     adjusted_height(); /* 高さ自動調整 */
   });
 
+  $(".site-hide").animate({
+    opacity:'toggle',
+    height: 'toggle'
+  }, 1500);
+
   // もっと見るボタン
-  $(".more").on("click", function() {
-    $(this).toggleClass("on-click");
-    $(".site-hide").slideToggle(300);
+  $('#more').click(function() {
+    $('.site-hide').slideToggle();
+    $(this).toggleClass('on-click');
+  });
+
+  window.addEventListener('DOMContentLoaded', () => {
+    const infiniteSlider = new Swiper('.infinite-slider', {
+      loop: true,
+      loopedSlides: 10,
+      slidesPerView: 'auto',
+      speed: 2000,
+      autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+      },
+    });
   });
 });
 
-window.addEventListener("DOMContentLoaded", () => {
-  const infiniteSlider = new Swiper(".infinite-slider", {
-    loop: true,
-    loopedSlides: 10,
-    slidesPerView: "auto",
-    speed: 2000,
-    autoplay: {
-      delay: 0,
-      disableOnInteraction: false,
-    },
-  });
-});
+// $(document).ready(function () {
+//   $('.site-hide').css('display', 'none');
+// });
