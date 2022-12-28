@@ -40,12 +40,28 @@ $(function() {
     $('.site-display').removeClass('pc-size');
     $('.site-display').addClass('small-size');
 
+    var siteImgs = document.getElementsByClassName('site-img');
+    var i = 1;
+
+    for (let img of siteImgs) {
+      img.setAttribute('src', "./img/no-image-" + i + ".png");
+      i++;
+    }
+
     adjusted_height(); /* 高さ自動調整 */
   });
   // PC版が押されたら
   $('.pc-size-btn').click(function() {
     $('.site-display').removeClass('small-size');
     $('.site-display').addClass('pc-size');
+
+    var siteImgs = document.getElementsByClassName('site-img');
+    var i = 1;
+
+    for (let img of siteImgs) {
+      img.setAttribute('src', "./img/" + i + ".png");
+      i++;
+    }
 
     adjusted_height(); /* 高さ自動調整 */
   });
@@ -74,7 +90,3 @@ $(function() {
     });
   });
 });
-
-// $(document).ready(function () {
-//   $('.site-hide').css('display', 'none');
-// });

@@ -227,7 +227,7 @@ footer p {
   margin: 0px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 640px) {
   body h2 span.en {
     font-size: 14px;
   }

@@ -55,10 +55,8 @@ li {
 .content li {
   width: 15%;
   margin: 0 20px;
-  float: left;
 }
 
-/* TODO: レスポンシブにする */
 .img-btn {
   cursor: pointer;
   max-width: 340px;
@@ -208,14 +206,11 @@ iframe {
 }
 
 #more:hover {
-  /* transform: translate(-3px, -3px); */
   box-shadow: 3px 3px;
-  /* transition: 0.2s; */
 }
 
 #more::after {
   content: "もっと見る";
-  /* transition: .2s; */
 }
 
 #more.on-click::after {
@@ -241,4 +236,75 @@ iframe {
 .infinite-slider .swiper-slide img {
   width: auto;
   height: 100%;
+}
+
+/* --------- リボン --------- */
+.ribbon-wrapper {
+  position: relative
+}
+
+.used-ribbon {
+  z-index: 2;
+  position: absolute;
+  bottom: -26px;
+  left: -27px;
+  width: 255px;
+  padding: 3px 5px;
+  border-radius: 5px;
+  font-size: 18px;
+  color: #FFF;
+  background: #ffbc67;
+}
+
+.used-ribbon:before {
+  content: '実際に使っていただいています';
+}
+
+
+@media(max-width: 1030px) {
+  .used-ribbon {
+    font-size: 14px;
+    width: 195px;
+  }
+}
+
+
+@media(max-width: 769px) {
+  .side-menu {
+    display: none;
+  }
+
+  .used-ribbon {
+    left: -10px;
+    width: 84px;
+  }
+  .used-ribbon:before {
+    content: '実用実績あり';
+  }
+
+  .content li {
+    width: 20%;
+    margin: 0 15px;
+  }
+}
+
+@media(max-width: 640px) {
+  .site-show {
+    margin-bottom: 20px;
+  }
+
+  .used-ribbon,
+  .side-menu,
+  .site-title,
+  #top-btn {
+    display: none;
+  }
+
+  .top-title h1 {
+    font-size: 20px;
+  }
+
+  #more {
+    padding: 5px 0px;
+  }
 }
