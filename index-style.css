@@ -1,0 +1,198 @@
+/* --------- サイト一覧 --------- */
+.content ul {
+  display: flex;
+  justify-content: center;
+}
+
+.content li {
+  width: 15%;
+  margin: 0 20px;
+  float: left;
+}
+
+/* TODO: レスポンシブにする */
+.img-btn {
+  cursor: pointer;
+  max-width: 340px;
+  max-height: 340px;
+}
+
+.site-img {
+  width: 30vw;
+  height: 15vw;
+  object-fit: contain;
+  max-width: 100%;
+  vertical-align: bottom;
+  border: 1px solid #ccc;
+  background-color: rgb(239, 239, 239);
+}
+
+.img-btn:hover {
+  transform: translate(-1px, -3px);
+  box-shadow: 5px 5px;
+  transition: 0.01s;
+}
+
+.img-btn:active {
+  transform: translate(1px, 3px);
+  box-shadow: none;
+}
+
+.top-title {
+  text-align: center;
+}
+
+.site-title p {
+  font-size: 12px;
+}
+
+/* --------- メイン表示 --------- */
+.main-show {
+  border-top: 1px solid rgb(141, 139, 139);
+}
+
+.site-display {
+  width: 100%;
+  margin: 0 auto;
+  display: none;
+}
+
+.import-site {
+  width: 100%;
+  /* height: 2000px; */
+}
+
+iframe {
+  height: 100%;
+}
+
+.small-size {
+  width: 340px;
+}
+
+.pc-size {
+  width: 100%;
+}
+
+.active {
+  display: block;
+  height: 2000px;
+}
+
+/* --------- サイドメニュー --------- */
+
+.side-menu {
+  writing-mode: vertical-rl;
+  font-weight: 500;
+  position: fixed;
+  justify-content: space-between;
+  top: 0px;
+  right: 0px;
+  display: flex;
+  z-index: 10;
+  background-color: #3A302D;
+  color: white;
+  height: 180px;
+  cursor: pointer;
+  border-bottom-left-radius: 18px;
+}
+
+.side-menu li {
+  padding: 10px 0px 23px 0px;
+  letter-spacing: 0.2em;
+  border-bottom-left-radius: 18px;
+}
+
+.side-menu li:hover {
+  color: #aa9f9c;
+  transition: 0.2s;
+}
+
+/* --------- スクロールボタン --------- */
+
+.page-top {
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  background: #fff;
+  border: solid 2px #000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgb(0 0 0 / 30%);
+  z-index: 2;
+}
+
+.page-top__arrow {
+  height: 10px;
+  width: 10px;
+  border-top: 3px solid #000;
+  border-right: 3px solid #000;
+  transform: translateY(20%) rotate(-45deg);
+}
+
+@media (hover: hover) and (pointer: fine) {
+
+  .page-top:hover,
+  .page-top:hover .page-top__arrow {
+    border-color: #3293e7;
+  }
+}
+
+/* --------- もっと見るボタン --------- */
+
+.site-hide {
+  display: block;
+}
+
+#more {
+  width: 120px;
+  margin: 20px auto;
+  display: block;
+  background-color: #fff;
+  color: #666;
+  border: 1px solid #666;
+  padding: 10px 15px;
+  outline: 0;
+  transition: .5s;
+  border-radius: 5px;
+}
+
+#more:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 3px 3px;
+  transition: 0.2s;
+}
+
+#more::after {
+  content: "もっと見る";
+  transition: .2s;
+}
+
+#more.on-click::after {
+  content: "閉じる";
+}
+
+.container {
+  max-width: 1380px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.infinite-slider .swiper-wrapper {
+  transition-timing-function: linear;
+  height: 100px;
+}
+
+.infinite-slider .swiper-slide {
+  height: 100px;
+  width: 160px;
+}
+
+.infinite-slider .swiper-slide img {
+  width: auto;
+  height: 100%;
+}
