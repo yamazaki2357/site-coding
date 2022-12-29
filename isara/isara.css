@@ -1,0 +1,70 @@
+@import url(../style.css);
+body {
+  font-family: "Hiragino Kaku Gothic Pro", Meiryo, Osaka, "MS PGothic", sans-serif;
+  color: #333333;
+  font-size: 14px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 75px;
+  padding-bottom: 6px;
+  margin: 0 auto;
+  width: 1170px;
+}
+header .header-left {
+  display: flex;
+  margin-top: 14px;
+}
+header .header-left img {
+  width: 128px;
+  height: 45px;
+  margin-right: 5px;
+}
+header .header-left p {
+  margin: 0;
+  padding-top: 22px;
+  font-size: 14px;
+}
+header .header-right {
+  background-color: #da6b64;
+  border-radius: 30px;
+  height: 44px;
+  text-align: center;
+  margin-top: 16px;
+}
+header .header-right a {
+  color: #fff;
+  letter-spacing: 2px;
+  text-decoration: none;
+  line-height: 44px;
+  font-size: 12px;
+  font-weight: 300;
+  padding: 0 40px;
+}
+
+.main-image-area {
+  background-image: url("./img/main.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  text-align: center;
+}
+.main-image-area p.title {
+  font-size: 28px;
+  margin: 0px;
+  padding-bottom: 10px;
+}
+.main-image-area p.title:first-of-type {
+  padding-top: 93px;
+}
+.main-image-area img {
+  width: 317px;
+  margin-bottom: 20px;
+}
+.main-image-area p {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}/*# sourceMappingURL=isara.css.map */
