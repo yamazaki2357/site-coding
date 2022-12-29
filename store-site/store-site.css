@@ -93,8 +93,9 @@ header .online-store a {
   background-color: #e6e2d7;
   display: flex;
   flex-direction: row-reverse;
-  margin-bottom: 180px;
-  padding: 0 20px 0 20px;
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto 180px auto;
 }
 .new-values h2 {
   font-size: 32px;
@@ -134,8 +135,9 @@ header .online-store a {
 .harmony {
   background-color: #e6e2d7;
   display: flex;
-  margin-bottom: 180px;
-  padding: 0 20px 0 20px;
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto 180px auto;
 }
 .harmony h2 {
   font-size: 32px;
@@ -225,7 +227,7 @@ footer p {
   margin: 0px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 640px) {
   body h2 span.en {
     font-size: 14px;
   }
@@ -233,6 +235,7 @@ footer p {
     font-size: 24px;
   }
   header {
+    max-height: 600px;
     background-image: url(https://code-step.com/demo/html/store3/img/mainvisual-sp.jpg);
     margin-bottom: 80px;
   }
@@ -282,9 +285,14 @@ footer p {
     width: 90%;
     margin-top: 70px;
   }
+  .new-values .new-values-img img {
+    padding-left: 20px;
+    width: 90%;
+  }
   .new-values .new-values-img p {
-    padding: 30px 40px;
+    padding: 25px 30px;
     font-size: 14px;
+    left: 10px;
   }
   .harmony {
     margin-bottom: 80px;
@@ -299,10 +307,14 @@ footer p {
     width: 90%;
     margin-top: 70px;
   }
+  .harmony .harmony-img img {
+    padding-right: 20px;
+    width: 90%;
+  }
   .harmony .harmony-img p {
-    padding: 30px 40px;
+    padding: 25px 30px;
     font-size: 14px;
-    right: -15px;
+    right: 10px;
   }
   .bottom-creation {
     padding-top: 40px;

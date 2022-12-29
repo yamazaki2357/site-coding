@@ -1,6 +1,6 @@
 $(function() {
   // メインエリア表示切り替え
-    $('.index-btn').click(function() {
+  $('.index-btn').click(function() {
     $('.active').removeClass('active');
 
     var clickedIndex = $('.index-btn').index($(this));
@@ -40,6 +40,14 @@ $(function() {
     $('.site-display').removeClass('pc-size');
     $('.site-display').addClass('small-size');
 
+    var siteImgs = document.getElementsByClassName('site-img');
+    var i = 1;
+
+    for (let img of siteImgs) {
+      img.setAttribute('src', "./img/no-image-" + i + ".png");
+      i++;
+    }
+
     adjusted_height(); /* 高さ自動調整 */
   });
   // PC版が押されたら
@@ -47,25 +55,38 @@ $(function() {
     $('.site-display').removeClass('small-size');
     $('.site-display').addClass('pc-size');
 
+    var siteImgs = document.getElementsByClassName('site-img');
+    var i = 1;
+
+    for (let img of siteImgs) {
+      img.setAttribute('src', "./img/" + i + ".png");
+      i++;
+    }
+
     adjusted_height(); /* 高さ自動調整 */
   });
 
-  // もっと見るボタン
-  $(".more").on("click", function() {
-    $(this).toggleClass("on-click");
-    $(".site-hide").slideToggle(300);
-  });
-});
+  $(".site-hide").animate({
+    opacity:'toggle',
+    height: 'toggle'
+  }, 1500);
 
-window.addEventListener("DOMContentLoaded", () => {
-  const infiniteSlider = new Swiper(".infinite-slider", {
-    loop: true,
-    loopedSlides: 10,
-    slidesPerView: "auto",
-    speed: 2000,
-    autoplay: {
-      delay: 0,
-      disableOnInteraction: false,
-    },
+  // もっと見るボタン
+  $('#more').click(function() {
+    $('.site-hide').slideToggle();
+    $(this).toggleClass('on-click');
+  });
+
+  window.addEventListener('DOMContentLoaded', () => {
+    const infiniteSlider = new Swiper('.infinite-slider', {
+      loop: true,
+      loopedSlides: 10,
+      slidesPerView: 'auto',
+      speed: 2000,
+      autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+      },
+    });
   });
 });
