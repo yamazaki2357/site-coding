@@ -33,38 +33,43 @@ body {
 
 header {
   position: fixed;
-  z-index: 10;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  z-index: 10;
   background-color: #fff;
   height: 69px;
   padding-bottom: 6px;
   margin: 0 auto;
-  max-width: 1170px;
   width: 100%;
 }
-header .header-left {
+header .wrapper {
+  max-width: 1170px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+header .wrapper .header-left {
   display: flex;
   margin-top: 14px;
 }
-header .header-left img {
+header .wrapper .header-left img {
   width: 128px;
   height: 45px;
   margin-right: 5px;
 }
-header .header-left p {
+header .wrapper .header-left p {
   margin: 0;
   padding-top: 22px;
   font-size: 14px;
 }
-header .header-right {
+header .wrapper .header-right {
   background-color: #da6b64;
   border-radius: 30px;
   height: 44px;
   text-align: center;
   margin-top: 16px;
 }
-header .header-right a {
+header .wrapper .header-right a {
   color: #fff;
   letter-spacing: 2px;
   text-decoration: none;
@@ -273,7 +278,62 @@ header .header-right a {
   font-weight: 300;
 }
 
+.step-area {
+  background-image: url(img/aboutsecondbg.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 40px 0;
+  text-align: center;
+  color: #fff;
+}
+.step-area h3 {
+  font-size: 28px;
+}
+.step-area p {
+  font-size: 20px;
+}
+.step-area span {
+  color: #ebb94d;
+  font-weight: 600;
+}
+.step-area .step-contents {
+  display: flex;
+  justify-content: space-evenly;
+}
+.step-area .step-contents .step-content {
+  width: 25%;
+  padding: 30px 30px 20px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.step-area .step-contents .step-content p {
+  color: black;
+}
+.step-area .step-contents .step-content .step-num {
+  color: #fff;
+  background-color: #ebb94d;
+}
+.step-area .step-contents .step-content .step-num p {
+  color: #fff;
+}
+
+.step-text {
+  background-color: rgb(1, 110, 167);
+  padding: 40px 0;
+  text-align: center;
+}
+.step-text p {
+  margin: 0px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+.step-text span {
+  color: #ebb94d;
+  font-weight: 600;
+}
+
 .hoge-area {
-  height: 500px;
+  height: 1500px;
   background-color: gray;
 }/*# sourceMappingURL=isara.css.map */

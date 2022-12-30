@@ -39,48 +39,54 @@ body {
 // ヘッダー -------------------------
 header {
   position: fixed;
-  z-index: 10;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  z-index: 10;
   background-color: #fff;
   height: 69px;
   padding-bottom: 6px;
   margin: 0 auto;
-  max-width: 1170px;
   width: 100%;
 
-  .header-left {
+  .wrapper {
+    max-width: 1170px;
+    width: 100%;
     display: flex;
-    margin-top: 14px;
+    justify-content: space-between;
 
-    img {
-      width: 128px;
-      height: 45px;
-      margin-right: 5px;
+    .header-left {
+      display: flex;
+      margin-top: 14px;
+  
+      img {
+        width: 128px;
+        height: 45px;
+        margin-right: 5px;
+      }
+  
+      p {
+        margin: 0;
+        padding-top: 22px;
+        font-size: 14px;
+      }
     }
-
-    p {
-      margin: 0;
-      padding-top: 22px;
-      font-size: 14px;
-    }
-  }
-
-  .header-right {
-    background-color: #da6b64;
-    border-radius: 30px;
-    height: 44px;
-    text-align: center;
-    margin-top: 16px;
-
-    a {
-      color: #fff;
-      letter-spacing: 2px;
-      text-decoration: none;
-      line-height: 44px;
-      font-size: 12px;
-      font-weight: 300;
-      padding: 0 40px;
+  
+    .header-right {
+      background-color: #da6b64;
+      border-radius: 30px;
+      height: 44px;
+      text-align: center;
+      margin-top: 16px;
+  
+      a {
+        color: #fff;
+        letter-spacing: 2px;
+        text-decoration: none;
+        line-height: 44px;
+        font-size: 12px;
+        font-weight: 300;
+        padding: 0 40px;
+      }
     }
   }
 }
@@ -312,10 +318,71 @@ header {
   }
 
 }
+// STEPエリア-------------------------
+.step-area {
+  background-image: url(img/aboutsecondbg.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 40px 0;
+  text-align: center;
+  color: #fff;
 
+  h3 {
+    font-size: 28px;
+  }
+  p {
+    font-size: 20px;
+  }
+  span {
+    color: #ebb94d;
+    font-weight: 600;
+  }
+  .step-contents {
+    display: flex;
+    justify-content: space-evenly;
+
+    .step-content {
+      width: 25%;
+      padding: 30px 30px 20px;
+      border-radius: 5px;
+      background-color: #fff;
+
+      p {
+        color: black;
+      }
+      .step-num {
+        color: #fff;
+        background-color: #ebb94d;
+        p {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.step-text {
+  background-color: rgb(1 110 167);
+  padding: 40px 0;
+  text-align: center;
+
+  p {
+    margin: 0px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  span {
+    color: #ebb94d;
+    font-weight: 600;
+  }
+}
+// 「稼ぐ力」エリア-------------------------
+// 「稼ぐ力」エリア-------------------------
+// 「稼ぐ力」エリア-------------------------
 // 「稼ぐ力」エリア-------------------------
 // 「稼ぐ力」エリア-------------------------
 .hoge-area {
-  height: 500px;
+  height: 1500px;
   background-color: gray;
 }
