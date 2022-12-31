@@ -332,6 +332,7 @@ header .wrapper .header-right a {
 .merit-area {
   text-align: center;
   background-color: #fef5e0;
+  padding-bottom: 10px;
 }
 .merit-area .merit-contents {
   display: flex;
@@ -356,6 +357,134 @@ header .wrapper .header-right a {
 .merit-area .support-area p {
   font-size: 16px;
   font-weight: 600;
+}
+
+.members-area {
+  padding: 40px 0;
+  background-image: url(img/teacherbg.jpg);
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+}
+.members-area img {
+  border-radius: 50%;
+}
+.members-area .member-wrapper {
+  padding: 40px;
+  border: 3px solid #fff;
+}
+
+.question-area {
+  position: relative;
+  padding: 40px 0;
+  text-align: center;
+  background-color: #ebb94d;
+  color: #fff;
+}
+.question-area .area-title p {
+  font-size: 20px;
+  font-weight: 600;
+}
+.question-area .area-title:before {
+  border-top: 4px solid #fff;
+  border-left: 4px solid #fff;
+}
+.question-area .area-title:after {
+  border-bottom: 4px solid #fff;
+  border-right: 4px solid #fff;
+}
+.question-area:after {
+  content: " ";
+  height: 0;
+  position: absolute;
+  width: 0;
+  border: 25px solid transparent;
+  border-top-color: #ebb94d;
+  top: 100%;
+  left: 50%;
+  margin-left: -25px;
+}
+
+.answer-area .answer {
+  width: 100%;
+  height: 200px;
+}
+.answer-area .answer img {
+  float: left;
+  width: 180px;
+  height: 180px;
+  border: 3px solid #ebb94d;
+}
+
+.learning-contents-area {
+  color: #fff;
+  text-align: center;
+  padding: 40px 0;
+  background-image: url(img/classbg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.learning-contents-area .learning-content {
+  display: flex;
+}
+.learning-contents-area .learning-content .content-title {
+  background-color: #016ea9;
+  color: #fff;
+}
+.learning-contents-area .learning-content .content-title p {
+  margin: 0;
+}
+.learning-contents-area .learning-content .before-travel {
+  background-color: #fff;
+  color: black;
+  border: 2px solid #016ea9;
+  padding: 0;
+  border-radius: 5px;
+}
+.learning-contents-area .learning-content .traveling {
+  background-color: #fff;
+  color: black;
+  border: 2px solid #016ea9;
+  padding: 0;
+  border-radius: 5px;
+}
+
+.support-message-area {
+  background-color: #016ea9;
+  padding: 40px 0;
+  color: #fff;
+  text-align: center;
+}
+.support-message-area p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.courses-flow-area .flow-box {
+  width: 1170px;
+  max-width: calc(100% - 40px);
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 10px 35px;
+  background-color: #fef5e0;
+}
+.courses-flow-area .flow-box .flow-left {
+  float: left;
+  padding: 20px;
+  width: 200px;
+}
+.courses-flow-area .flow-box .flow-right {
+  overflow: hidden;
+  text-align: left;
+  padding: 10px 0 0;
+}
+.courses-flow-area .flow-image {
+  max-width: 100%;
+  margin: 0 auto;
+  width: 70%;
 }
 
 .hoge-area {
