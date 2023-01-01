@@ -23,7 +23,6 @@ body {
   .twitter {
     background-color: #1d9bf0;
     border-radius: 10px;
-
   }
   .nice {
     background-color: #1877f2;
@@ -36,6 +35,7 @@ body {
     border-radius: 3px;
   }
 }
+
 .area-title {
   margin: 0 auto;
   position: relative;
@@ -88,41 +88,41 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
+  }
+}
 
-    .header-left {
-      display: flex;
-      margin-top: 14px;
-  
-      img {
-        width: 128px;
-        height: 45px;
-        margin-right: 5px;
-      }
-  
-      p {
-        margin: 0;
-        padding-top: 22px;
-        font-size: 14px;
-      }
-    }
-  
-    .header-right {
-      background-color: #da6b64;
-      border-radius: 30px;
-      height: 44px;
-      text-align: center;
-      margin-top: 16px;
-  
-      a {
-        color: #fff;
-        letter-spacing: 2px;
-        text-decoration: none;
-        line-height: 44px;
-        font-size: 12px;
-        font-weight: 300;
-        padding: 0 40px;
-      }
-    }
+.header-left {
+  display: flex;
+  margin-top: 14px;
+
+  img {
+    width: 128px;
+    height: 45px;
+    margin-right: 5px;
+  }
+
+  p {
+    margin: 0;
+    padding-top: 22px;
+    font-size: 14px;
+  }
+}
+
+.header-right {
+  background-color: #da6b64;
+  border-radius: 30px;
+  height: 44px;
+  text-align: center;
+  margin-top: 16px;
+
+  a {
+    color: #fff;
+    letter-spacing: 2px;
+    text-decoration: none;
+    line-height: 44px;
+    font-size: 12px;
+    font-weight: 300;
+    padding: 0 40px;
   }
 }
 // メイン画像エリア -------------------------
@@ -180,17 +180,17 @@ header {
       font-size: 18px;
     }
   }
+}
 
-  .request-btn {
-    a {
-      display: inline-block;
-      background-color: #da6b64;
-      border-radius: 50px;
-      font-size: 18px;
-      font-weight: 600;
-      padding: 25px 250px;
-      color: #fff;
-    }
+.request-btn {
+  a {
+    display: inline-block;
+    background-color: #da6b64;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 25px 250px;
+    color: #fff;
   }
 }
 // 「稼ぐ力」エリア-------------------------
@@ -240,44 +240,43 @@ header {
     font-size: 16px;
     font-weight: 600;
   }
+}
 
-  .skill-contents {
-    width: 1170px;
-    max-width: calc(100% - 40px);
-    margin: 30px auto;
-    background-color: #fff;
-    border: 2px solid #ebb94d;
-    border-radius: 5px;
-    padding: 17px 0;
+.skill-contents {
+  width: 1170px;
+  max-width: calc(100% - 40px);
+  margin: 30px auto;
+  background-color: #fff;
+  border: 2px solid #ebb94d;
+  border-radius: 5px;
+  padding: 17px 0;
 
-    p {
-      font-size: 16px;
-      font-weight: 600;
-    }
+  p {
+    font-size: 16px;
+    font-weight: 600;
+  }
 
-    .contents-area {
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
+  .contents-area {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 
-      .content {
-        padding: 10px;
+    .content {
+      padding: 10px;
 
-        img {
-          width: auto;
-          height: auto;
-          max-width: 100%;
-          max-height: 100%;
-        }
+      img {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+      }
 
-        p {
-          margin-top: 10px;
-          font-size: 12px;
-          font-weight: 300;
-        }
+      p {
+        margin-top: 10px;
+        font-size: 12px;
+        font-weight: 300;
       }
     }
-
   }
 
 }
@@ -300,25 +299,26 @@ header {
     color: #ebb94d;
     font-weight: 600;
   }
-  .step-contents {
-    display: flex;
-    justify-content: space-evenly;
+}
 
-    .step-content {
-      width: 25%;
-      padding: 30px 30px 20px;
-      border-radius: 5px;
-      background-color: #fff;
+.step-contents {
+  display: flex;
+  justify-content: space-evenly;
 
+  .step-content {
+    width: 25%;
+    padding: 30px 30px 20px;
+    border-radius: 5px;
+    background-color: #fff;
+
+    p {
+      color: black;
+    }
+    .step-num {
+      color: #fff;
+      background-color: #ebb94d;
       p {
-        color: black;
-      }
-      .step-num {
         color: #fff;
-        background-color: #ebb94d;
-        p {
-          color: #fff;
-        }
       }
     }
   }
@@ -353,23 +353,25 @@ header {
   p {
     font-size: 16px;
   }
-  .study-contents {
-    text-align: center;
+}
 
-    .study-content {
-      display: flex;
-      justify-content: space-evenly;
+.study-contents {
+  text-align: center;
 
-      img {
-        width: 180px;
-        height: 180px;
-      }
-    }
-    p {
-      font-weight: 500;
+  .study-content {
+    display: flex;
+    justify-content: space-evenly;
+
+    img {
+      width: 180px;
+      height: 180px;
     }
   }
+  p {
+    font-weight: 500;
+  }
 }
+
 // メリットエリア-------------------------
 .merit-area {
   text-align: center;
@@ -379,33 +381,34 @@ header {
   .area-title {
 
   }
-  .merit-contents {
-    display: flex;
+}
+.merit-contents {
+  display: flex;
 
-    .merit-content {
-      h4 {
-        color: #ebb94d;
-      }
+  .merit-content {
+    h4 {
+      color: #ebb94d;
     }
   }
-  .support-area {
-    width: 730px;
-    max-width: calc(100% - 40px);
-    margin: 40px auto;
-    padding: 40px 20px;
-    background-color: #fff;
-    border: 2px solid #ebb94d;
-    border-radius: 5px;
+}
 
-    h3 {
-      color: #ebb94d;
-      font-size: 24px;
-      font-weight: 600;
-    }
-    p {
-      font-size: 16px;
-      font-weight: 600;
-    }
+.support-area {
+  width: 730px;
+  max-width: calc(100% - 40px);
+  margin: 40px auto;
+  padding: 40px 20px;
+  background-color: #fff;
+  border: 2px solid #ebb94d;
+  border-radius: 5px;
+
+  h3 {
+    color: #ebb94d;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  p {
+    font-size: 16px;
+    font-weight: 600;
   }
 }
 // 創業メンバーエリア-------------------------
@@ -435,23 +438,6 @@ header {
   background-color: #ebb94d;
   color: #fff;
 
-  .area-title {
-    p {
-      font-size: 20px;
-      font-weight: 600;
-    }
-
-    &:before {
-      border-top: 4px solid #fff;
-      border-left: 4px solid #fff;
-    }
-
-    &:after {
-      border-bottom: 4px solid #fff;
-      border-right: 4px solid #fff;
-    }
-  }
-
   &:after {
     content: " ";
     height: 0;
@@ -462,6 +448,23 @@ header {
     top: 100%;
     left: 50%;
     margin-left: -25px;
+  }
+}
+
+.area-title {
+  p {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  &:before {
+    border-top: 4px solid #fff;
+    border-left: 4px solid #fff;
+  }
+
+  &:after {
+    border-bottom: 4px solid #fff;
+    border-right: 4px solid #fff;
   }
 }
 // answerエリア-------------------------
@@ -487,31 +490,32 @@ header {
   background-image: url(img/classbg.jpg);
   background-position: center;
   background-size: cover;
-  .learning-content {
-    display: flex;
+}
 
-    .content-title {
-      background-color: #016ea9;
-      color: #fff;
-      p {
-        margin: 0;
-      }
-    }
+.learning-content {
+  display: flex;
 
-    .before-travel {
-      background-color: #fff;
-      color: black;
-      border: 2px solid #016ea9;
-      padding: 0;
-      border-radius: 5px;
+  .content-title {
+    background-color: #016ea9;
+    color: #fff;
+    p {
+      margin: 0;
     }
-    .traveling {
-      background-color: #fff;
-      color: black;
-      border: 2px solid #016ea9;
-      padding: 0;
-      border-radius: 5px;
-    }
+  }
+
+  .before-travel {
+    background-color: #fff;
+    color: black;
+    border: 2px solid #016ea9;
+    padding: 0;
+    border-radius: 5px;
+  }
+  .traveling {
+    background-color: #fff;
+    color: black;
+    border: 2px solid #016ea9;
+    padding: 0;
+    border-radius: 5px;
   }
 }
 // support-messageエリア-------------------------
@@ -528,36 +532,38 @@ header {
 }
 // 受講の流れエリア-------------------------
 .courses-flow-area {
-  .flow-area {
-    
-  }
-  .flow-box {
-    width: 1170px;
-    max-width: calc(100% - 40px);
-    overflow: hidden;
-    border-radius: 10px;
-    margin: 0 auto;
-    padding: 10px 35px;
-    background-color: #fef5e0;
+}
 
-    .flow-left {
-      float: left;
-      padding: 20px;
-      width: 200px;
-    }
-    .flow-right {
-      overflow: hidden;
-      text-align: left;
-      padding: 10px 0 0;
-    }
+.flow-area {
+  
+}
+
+.flow-box {
+  width: 1170px;
+  max-width: calc(100% - 40px);
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 10px 35px;
+  background-color: #fef5e0;
+
+  .flow-left {
+    float: left;
+    padding: 20px;
+    width: 200px;
   }
-  .flow-image {
-    max-width: 100%;
-    margin: 0 auto;
-    width: 70%;
+  .flow-right {
+    overflow: hidden;
+    text-align: left;
+    padding: 10px 0 0;
   }
 }
 
+.flow-image {
+  max-width: 100%;
+  margin: 0 auto;
+  width: 70%;
+}
 
 
 
