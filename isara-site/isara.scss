@@ -202,6 +202,10 @@ header {
   text-align: center;
   padding: 40px 0;
 
+  .area-title p {
+    font-size: 28px;
+  }
+
   p {
     font-size: 16px;
     margin: 10px;
@@ -219,6 +223,9 @@ header {
   padding: 0 0 40px 0;
   background-color: #fef5e0;
 
+  .area-title p {
+      font-size: 28px;
+    }
   .about {
         position: relative;
           top: -40px;
@@ -237,7 +244,7 @@ header {
   }
 
   p {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
   }
 }
@@ -313,10 +320,14 @@ header {
 
     p {
       color: black;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 1.6;
     }
     .step-num {
       color: #fff;
       background-color: #ebb94d;
+      margin-bottom: 10px;
       p {
         color: #fff;
       }
@@ -344,19 +355,26 @@ header {
 // メリットエリア-------------------------
 .study-area {
   text-align: center;
+  padding: 40px 0;
+
   h2 {
-    font-size: 20px;
+    font-size: 28px;
+    margin-bottom: 35px;
     span {
-      font-size: 12px;
+      font-size: 16px;
     }
   }
   p {
-    font-size: 16px;
+    font-size: 20px;
+    margin-bottom: 10px;
   }
 }
 
 .study-contents {
-  text-align: center;
+  padding: 0;
+  width: 860px;
+  max-width: calc(100% - 40px);
+  margin: 40px auto 0 auto;
 
   .study-content {
     display: flex;
@@ -368,7 +386,9 @@ header {
     }
   }
   p {
-    font-weight: 500;
+    margin-top: 40px;
+    font-weight: 600;
+    font-size: 16px;
   }
 }
 
@@ -378,9 +398,6 @@ header {
   background-color: #fef5e0;
   padding-bottom: 10px;
 
-  .area-title {
-
-  }
 }
 .merit-contents {
   display: flex;
@@ -449,24 +466,25 @@ header {
     left: 50%;
     margin-left: -25px;
   }
+
+  .area-title {
+    p {
+      font-size: 20px;
+      font-weight: 600;
+    }
+  
+    &:before {
+      border-top: 4px solid #fff;
+      border-left: 4px solid #fff;
+    }
+  
+    &:after {
+      border-bottom: 4px solid #fff;
+      border-right: 4px solid #fff;
+    }
+  }
 }
 
-.area-title {
-  p {
-    font-size: 20px;
-    font-weight: 600;
-  }
-
-  &:before {
-    border-top: 4px solid #fff;
-    border-left: 4px solid #fff;
-  }
-
-  &:after {
-    border-bottom: 4px solid #fff;
-    border-right: 4px solid #fff;
-  }
-}
 // answerエリア-------------------------
 .answer-area {
 
