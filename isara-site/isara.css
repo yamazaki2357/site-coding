@@ -81,28 +81,30 @@ header .wrapper {
   display: flex;
   justify-content: space-between;
 }
-header .wrapper .header-left {
+
+.header-left {
   display: flex;
   margin-top: 14px;
 }
-header .wrapper .header-left img {
+.header-left img {
   width: 128px;
   height: 45px;
   margin-right: 5px;
 }
-header .wrapper .header-left p {
+.header-left p {
   margin: 0;
   padding-top: 22px;
   font-size: 14px;
 }
-header .wrapper .header-right {
+
+.header-right {
   background-color: #da6b64;
   border-radius: 30px;
   height: 44px;
   text-align: center;
   margin-top: 16px;
 }
-header .wrapper .header-right a {
+.header-right a {
   color: #fff;
   letter-spacing: 2px;
   text-decoration: none;
@@ -162,7 +164,8 @@ header .wrapper .header-right a {
   margin: 20px 0;
   font-size: 18px;
 }
-.request-btn-area .request-btn a {
+
+.request-btn a {
   display: inline-block;
   background-color: #da6b64;
   border-radius: 50px;
@@ -214,7 +217,8 @@ header .wrapper .header-right a {
   font-size: 16px;
   font-weight: 600;
 }
-.about-area .skill-contents {
+
+.skill-contents {
   width: 1170px;
   max-width: calc(100% - 40px);
   margin: 30px auto;
@@ -223,25 +227,25 @@ header .wrapper .header-right a {
   border-radius: 5px;
   padding: 17px 0;
 }
-.about-area .skill-contents p {
+.skill-contents p {
   font-size: 16px;
   font-weight: 600;
 }
-.about-area .skill-contents .contents-area {
+.skill-contents .contents-area {
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
-.about-area .skill-contents .contents-area .content {
+.skill-contents .contents-area .content {
   padding: 10px;
 }
-.about-area .skill-contents .contents-area .content img {
+.skill-contents .contents-area .content img {
   width: auto;
   height: auto;
   max-width: 100%;
   max-height: 100%;
 }
-.about-area .skill-contents .contents-area .content p {
+.skill-contents .contents-area .content p {
   margin-top: 10px;
   font-size: 12px;
   font-weight: 300;
@@ -265,24 +269,25 @@ header .wrapper .header-right a {
   color: #ebb94d;
   font-weight: 600;
 }
-.step-area .step-contents {
+
+.step-contents {
   display: flex;
   justify-content: space-evenly;
 }
-.step-area .step-contents .step-content {
+.step-contents .step-content {
   width: 25%;
   padding: 30px 30px 20px;
   border-radius: 5px;
   background-color: #fff;
 }
-.step-area .step-contents .step-content p {
+.step-contents .step-content p {
   color: black;
 }
-.step-area .step-contents .step-content .step-num {
+.step-contents .step-content .step-num {
   color: #fff;
   background-color: #ebb94d;
 }
-.step-area .step-contents .step-content .step-num p {
+.step-contents .step-content .step-num p {
   color: #fff;
 }
 
@@ -314,18 +319,19 @@ header .wrapper .header-right a {
 .study-area p {
   font-size: 16px;
 }
-.study-area .study-contents {
+
+.study-contents {
   text-align: center;
 }
-.study-area .study-contents .study-content {
+.study-contents .study-content {
   display: flex;
   justify-content: space-evenly;
 }
-.study-area .study-contents .study-content img {
+.study-contents .study-content img {
   width: 180px;
   height: 180px;
 }
-.study-area .study-contents p {
+.study-contents p {
   font-weight: 500;
 }
 
@@ -334,13 +340,14 @@ header .wrapper .header-right a {
   background-color: #fef5e0;
   padding-bottom: 10px;
 }
-.merit-area .merit-contents {
+.merit-contents {
   display: flex;
 }
-.merit-area .merit-contents .merit-content h4 {
+.merit-contents .merit-content h4 {
   color: #ebb94d;
 }
-.merit-area .support-area {
+
+.support-area {
   width: 730px;
   max-width: calc(100% - 40px);
   margin: 40px auto;
@@ -349,12 +356,12 @@ header .wrapper .header-right a {
   border: 2px solid #ebb94d;
   border-radius: 5px;
 }
-.merit-area .support-area h3 {
+.support-area h3 {
   color: #ebb94d;
   font-size: 24px;
   font-weight: 600;
 }
-.merit-area .support-area p {
+.support-area p {
   font-size: 16px;
   font-weight: 600;
 }
@@ -382,18 +389,6 @@ header .wrapper .header-right a {
   background-color: #ebb94d;
   color: #fff;
 }
-.question-area .area-title p {
-  font-size: 20px;
-  font-weight: 600;
-}
-.question-area .area-title:before {
-  border-top: 4px solid #fff;
-  border-left: 4px solid #fff;
-}
-.question-area .area-title:after {
-  border-bottom: 4px solid #fff;
-  border-right: 4px solid #fff;
-}
 .question-area:after {
   content: " ";
   height: 0;
@@ -404,6 +399,19 @@ header .wrapper .header-right a {
   top: 100%;
   left: 50%;
   margin-left: -25px;
+}
+
+.area-title p {
+  font-size: 20px;
+  font-weight: 600;
+}
+.area-title:before {
+  border-top: 4px solid #fff;
+  border-left: 4px solid #fff;
+}
+.area-title:after {
+  border-bottom: 4px solid #fff;
+  border-right: 4px solid #fff;
 }
 
 .answer-area .answer {
@@ -425,24 +433,25 @@ header .wrapper .header-right a {
   background-position: center;
   background-size: cover;
 }
-.learning-contents-area .learning-content {
+
+.learning-content {
   display: flex;
 }
-.learning-contents-area .learning-content .content-title {
+.learning-content .content-title {
   background-color: #016ea9;
   color: #fff;
 }
-.learning-contents-area .learning-content .content-title p {
+.learning-content .content-title p {
   margin: 0;
 }
-.learning-contents-area .learning-content .before-travel {
+.learning-content .before-travel {
   background-color: #fff;
   color: black;
   border: 2px solid #016ea9;
   padding: 0;
   border-radius: 5px;
 }
-.learning-contents-area .learning-content .traveling {
+.learning-content .traveling {
   background-color: #fff;
   color: black;
   border: 2px solid #016ea9;
@@ -462,7 +471,7 @@ header .wrapper .header-right a {
   font-weight: 600;
 }
 
-.courses-flow-area .flow-box {
+.flow-box {
   width: 1170px;
   max-width: calc(100% - 40px);
   overflow: hidden;
@@ -471,23 +480,98 @@ header .wrapper .header-right a {
   padding: 10px 35px;
   background-color: #fef5e0;
 }
-.courses-flow-area .flow-box .flow-left {
+.flow-box .flow-left {
   float: left;
   padding: 20px;
   width: 200px;
 }
-.courses-flow-area .flow-box .flow-right {
+.flow-box .flow-right {
   overflow: hidden;
   text-align: left;
   padding: 10px 0 0;
 }
-.courses-flow-area .flow-image {
+
+.flow-image {
   max-width: 100%;
   margin: 0 auto;
   width: 70%;
 }
 
-.hoge-area {
-  height: 1500px;
-  background-color: gray;
+.reason-area {
+  background-image: url(img/bangkokbg.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 80px 80px;
+  color: #fff;
+}
+
+.participation-area {
+  background-size: 300px auto;
+  padding: 40px 0;
+  text-align: center;
+  background-color: #f7c23c;
+}
+.participation-area h3 {
+  font-size: 28px;
+  position: relative;
+  bottom: -58px;
+  width: 45%;
+  background-color: #f7c23c;
+  margin: 0 auto;
+  font-weight: 600;
+}
+
+.participation-box {
+  margin-top: 40px;
+  padding: 40px;
+  border: 2px solid #fff;
+}
+.participation-box .box-item {
+  width: 250px;
+  height: 250px;
+  background-color: #fff;
+  padding: 0;
+  margin: 10px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 50%;
+}
+.participation-box .box-item h4 {
+  font-size: 24px;
+  font-weight: 300;
+  color: #ebb94d;
+}
+.participation-box .box-item p {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.value-area {
+  text-align: center;
+  padding: 40px 0;
+  color: #fff;
+  background-image: url(img/specialdetail.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.request-information-area {
+  background-color: #ebb94d;
+  padding: 40px 20%;
+  text-align: center;
+}
+
+.asked-question-area {
+  padding: 40px 10%;
+  text-align: center;
+}
+
+.footer-wrapper {
+  position: relative;
+  padding: 40px 15px 20px 15px;
+  background-color: #ececec;
+  text-align: center;
+}
+.footer-wrapper .btn-area {
+  color: #fff;
 }/*# sourceMappingURL=isara.css.map */

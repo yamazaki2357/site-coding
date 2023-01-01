@@ -564,15 +564,101 @@ header {
   margin: 0 auto;
   width: 70%;
 }
-
-
-
-
-// 「稼ぐ力」エリア-------------------------
-// 「稼ぐ力」エリア-------------------------
-// 「稼ぐ力」エリア-------------------------
-// 「稼ぐ力」エリア-------------------------
-.hoge-area {
-  height: 1500px;
-  background-color: gray;
+// 理由エリア-------------------------
+.reason-area {
+  background-image: url(img/bangkokbg.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 80px 80px;
+  color: #fff;
 }
+
+
+
+
+// 参加特典エリア-------------------------
+.participation-area {
+  background-size: 300px auto;
+  padding: 40px 0;
+  text-align: center;
+  background-color: #f7c23c;
+
+  h3 {
+    font-size: 28px;
+    position: relative;
+    bottom: -58px;
+    width: 45%;
+    background-color: #f7c23c;
+    margin: 0 auto;
+    font-weight: 600;
+  }
+}
+
+.participation-box {
+  margin-top: 40px;
+  padding: 40px;
+  border: 2px solid #fff;
+
+  .box-item {
+    width: 250px;
+    height: 250px;
+    background-color: #fff;
+    padding: 0;
+    margin: 10px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+
+    h4 {
+      font-size: 24px;
+      font-weight: 300;
+      color: #ebb94d;
+    }
+
+    p {
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+}
+
+
+
+// 価値エリア-------------------------
+.value-area {
+  text-align: center;
+  padding: 40px 0;
+  color: #fff;
+  background-image: url(img/specialdetail.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+
+// メッセージエリア-------------------------
+.message-area {
+
+}
+// 資料請求フォームエリア-------------------------
+.request-information-area {
+  background-color: #ebb94d;
+  padding: 40px 20%;
+  text-align: center;
+}
+// 「稼ぐ力」エリア-------------------------
+.asked-question-area {
+  padding: 40px 10%;
+  text-align: center;
+}
+// よくある質問エリア-------------------------
+
+// footerエリア-------------------------
+  .footer-wrapper {
+    position: relative;
+    padding: 40px 15px 20px 15px;
+    background-color: #ececec;
+    text-align: center;
+    .btn-area {
+      color: #fff;
+    }
+  }
