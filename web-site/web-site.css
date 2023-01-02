@@ -162,10 +162,16 @@ hero
 */
 .hero {
   width: 100vw;
-  height: 100vh;
+  min-height: 780px;
   position: relative;
   overflow: hidden;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    min-height: 11vh;
+  }
 }
 
 .hero>strong {
@@ -186,6 +192,7 @@ hero
   position: absolute;
   z-index: 1;
   width: 100%;
+  height: auto;
 }
 
 .hero-particles {
