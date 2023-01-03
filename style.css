@@ -45,3 +45,13 @@ li {
   max-width: 900px;
   margin: 0 auto;
 }
+
+input,
+select,
+textarea::placeholder {
+  color: #9e9e9e;
+}
+
+.bold {
+  font-weight: 600;
+}

@@ -572,16 +572,91 @@ header .wrapper {
   background-position: center;
   background-size: cover;
 }
+.value-area .area-title:before {
+  border-top: 4px solid #fff;
+  border-left: 4px solid #fff;
+}
+.value-area .area-title:after {
+  border-bottom: 4px solid #fff;
+  border-right: 4px solid #fff;
+}
+
+.message-area {
+  text-align: center;
+  text-align: center;
+  padding: 40px 0;
+}
+.message-area h2 {
+  margin-bottom: 30px;
+}
+
+.message-wrapper {
+  display: flex;
+  max-width: 1028px;
+  padding: 0;
+  width: 860px;
+  max-width: calc(100% - 40px);
+  margin: 40px auto;
+}
+.message-wrapper .text-area {
+  text-align: left;
+  line-height: 30px;
+}
+
+.message-image img {
+  width: 180px;
+  padding: 20px;
+}
+
+.asked-question-area {
+  padding: 40px 10%;
+  text-align: center;
+}
 
 .request-information-area {
   background-color: #ebb94d;
   padding: 40px 20%;
   text-align: center;
 }
+.request-information-area h2 {
+  font-style: 20px;
+}
+.request-information-area p {
+  font-weight: 600;
+  font-style: 12px;
+  margin-bottom: 30px;
+}
 
-.asked-question-area {
-  padding: 40px 10%;
+.form-area {
+  width: 100%;
   text-align: center;
+}
+.form-area input {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 25px;
+  border: none;
+}
+.form-area textarea {
+  margin-top: 20px;
+  width: 100%;
+  height: 90px;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 25px;
+  border: none;
+}
+
+.form-btn {
+  background-color: #da6b64;
+  color: #fff;
+  padding: 10px 80px;
+  border-radius: 50px !important;
+  font-size: 23px;
+  font-weight: 600;
+  border: none;
 }
 
 .footer-wrapper {
@@ -592,4 +667,11 @@ header .wrapper {
 }
 .footer-wrapper .btn-area {
   color: #fff;
+}
+
+.copy-right {
+  font-size: 10px;
+  font-weight: 300;
+  margin-bottom: 0;
+  padding-bottom: 5px;
 }/*# sourceMappingURL=isara.css.map */
