@@ -44,6 +44,7 @@
 
 .site-title p {
   font-size: 12px;
+  margin: 5px 0;
 }
 
 /* --------- メイン表示 --------- */
@@ -194,4 +195,35 @@ iframe {
 .infinite-slider .swiper-slide img {
   width: auto;
   height: 100%;
+}
+
+/* --------- ロゴ --------- */
+.site-title {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.content-logo {
+  display: flex;
+  width: 50%;
+  justify-content: flex-end;
+}
+.logo-style {
+  border-radius: 10px;
+  padding: 5px 5px;
+  margin-left: 4px!important;
+  color: #fff;
+  font-weight: bold;
+}
+.html {
+  background-color: #e44d26;
+}
+.css {
+  background-color: #379ad6;
+}
+.javascript {
+  background-color: #eeaf4b;
+}
+.used {
+  background-color: red;
 }
