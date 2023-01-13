@@ -80,7 +80,7 @@ $(function() {
   window.addEventListener('DOMContentLoaded', () => {
     const infiniteSlider = new Swiper('.infinite-slider', {
       loop: true,
-      loopedSlides: 10,
+      loopedSlides: 30,
       slidesPerView: 'auto',
       speed: 2000,
       autoplay: {
