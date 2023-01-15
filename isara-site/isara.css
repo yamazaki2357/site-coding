@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(../style.css);
 body {
   color: #333333;
@@ -203,6 +204,10 @@ header .wrapper {
 .about-area .area-title p {
   font-size: 28px;
 }
+.about-area p {
+  font-size: 20px;
+  font-weight: 600;
+}
 .about-area .about {
   position: relative;
   top: -40px;
@@ -218,10 +223,7 @@ header .wrapper {
   text-align: center;
   display: inline-block;
   border-radius: 50%;
-}
-.about-area p {
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 16px;
 }
 
 .skill-contents {
@@ -361,6 +363,10 @@ header .wrapper {
 
 .merit-contents {
   display: flex;
+  justify-content: space-evenly;
+}
+.merit-contents .merit-content {
+  width: 25%;
 }
 .merit-contents .merit-content h4 {
   color: #ebb94d;
@@ -408,13 +414,16 @@ header .wrapper {
 }
 
 .member-wrapper {
-  width: 90%;
+  width: 80%;
   margin: 40px auto;
 }
 
 .member {
   padding: 40px;
   border: 3px solid #fff;
+}
+.member p:last-child {
+  text-align: left;
 }
 
 .question-area {
@@ -473,6 +482,7 @@ header .wrapper {
 }
 .answer-area .answer img {
   width: 30%;
+  max-width: 350px;
   height: auto;
   border: 3px solid #ebb94d;
 }
@@ -567,7 +577,7 @@ header .wrapper {
 
 .flow-area {
   margin: 30px 0;
-  padding: 0 100px;
+  padding: 0 15%;
 }
 
 .flow-box {
@@ -647,6 +657,7 @@ header .wrapper {
 .participation-box .box-item p {
   font-size: 14px;
   font-weight: 600;
+  padding: 0 24px;
 }
 
 .value-area {
@@ -689,7 +700,7 @@ header .wrapper {
 }
 
 .message-image img {
-  width: 180px;
+  width: 300px;
   padding: 20px;
 }
 
@@ -742,6 +753,56 @@ header .wrapper {
   font-size: 23px;
   font-weight: 600;
   border: none;
+}
+
+.questions {
+  padding: 40px 10%;
+  text-align: center;
+}
+
+.questions .txtl {
+  margin-bottom: 40px;
+}
+
+.questions-list {
+  width: 1170px;
+  max-width: calc(100% - 40px);
+  margin: 0 auto;
+  text-align: left;
+}
+
+.panel-default {
+  border: none;
+}
+
+.questionsbody {
+  border: none !important;
+  background-color: #fff;
+  padding: 0 20px;
+}
+
+.questionsheading {
+  padding: 0px 20px;
+  border: 1px solid #e5e5e5 !important;
+  margin-bottom: 5px;
+}
+
+.questionsheading h4 a {
+  cursor: pointer;
+  display: block;
+  color: black;
+}
+
+.questionstoggle a:before {
+  content: "○";
+  float: left;
+  padding-right: 5px;
+}
+
+.questionstoggle a:after {
+  content: "◁";
+  float: right;
+  color: #9d9d9d;
 }
 
 .footer-wrapper {

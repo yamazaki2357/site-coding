@@ -226,6 +226,10 @@ header {
   .area-title p {
       font-size: 28px;
     }
+  p {
+    font-size: 20px;
+    font-weight: 600;
+  }
   .about {
         position: relative;
           top: -40px;
@@ -240,12 +244,8 @@ header {
       text-align: center;
       display: inline-block;
       border-radius: 50%;
+      font-size: 16px;
     }
-  }
-
-  p {
-    font-size: 20px;
-    font-weight: 600;
   }
 }
 
@@ -401,8 +401,10 @@ header {
 }
 .merit-contents {
   display: flex;
+  justify-content: space-evenly;
 
   .merit-content {
+    width: 25%;
     h4 {
       color: #ebb94d;
     }
@@ -454,13 +456,16 @@ header {
 }
 
 .member-wrapper {
-  width: 90%;
+  width: 80%;
   margin: 40px auto;
 }
 
 .member {
   padding: 40px;
   border: 3px solid #fff;
+  p:last-child {
+    text-align: left
+  }
 }
 
 // questionエリア-------------------------
@@ -527,6 +532,7 @@ header {
 
     img {
       width: 30%;
+      max-width: 350px;
       height: auto;
       border: 3px solid #ebb94d;
     }
@@ -626,7 +632,7 @@ header {
 
 .flow-area {
   margin: 30px 0;
-  padding: 0 100px;
+  padding: 0 15%;
 }
 
 .flow-box {
@@ -713,6 +719,7 @@ header {
     p {
       font-size: 14px;
       font-weight: 600;
+      padding: 0 24px;
     }
   }
 }
@@ -763,7 +770,7 @@ header {
   }
 }
 .message-image img {
-  width: 180px;
+  width: 300px;
   padding: 20px;
 }
 // 「稼ぐ力」エリア-------------------------
@@ -818,7 +825,55 @@ header {
 }
 
 // よくある質問エリア-------------------------
+.questions {
+  padding: 40px 10%;
+  text-align: center;
+}
 
+
+.questions .txtl {
+  margin-bottom: 40px;
+}
+
+.questions-list {
+  width: 1170px;
+  max-width: calc(100% - 40px);
+  margin: 0 auto;
+  text-align: left;
+}
+
+.panel-default {
+  border: none;
+}
+
+.questionsbody {
+  border: none !important;
+  background-color: #fff;
+  padding: 0 20px;
+}
+
+.questionsheading {
+  padding: 0px 20px;
+  border: 1px solid #e5e5e5 !important;
+  margin-bottom: 5px;
+}
+
+.questionsheading h4 a {
+  cursor: pointer;
+  display: block;
+  color: black;
+}
+
+.questionstoggle a:before {
+  content: "○";
+  float: left;
+  padding-right: 5px;
+}
+.questionstoggle a:after {
+  content: "◁";
+  float: right;
+  color: #9d9d9d;
+}
 // footerエリア-------------------------
 .footer-wrapper {
   position: relative;
