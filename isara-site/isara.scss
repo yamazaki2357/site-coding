@@ -383,7 +383,43 @@ header {
       }
     }
   }
+}
 
+@media(max-width: 340px) {
+  .skill-contents {
+    .contents-area {
+      justify-content: center;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      flex-direction: row;
+  
+      .content {
+        padding: 0px;
+        width: 50%;
+    
+        img {
+          height: 30px;
+        }
+        p {
+          font-size: 12px;
+          padding: 0px;
+        }
+      }
+    }
+  }
+  .about-area {
+    p {
+      font-size: 15px;
+      padding: 0px 30px;
+    }
+    .about p {
+      font-size: 13px;
+      font-weight: normal;
+      width: 70px;
+      height: 70px;
+      line-height: 70px;
+    }
+  }
 }
 // STEPエリア-------------------------
 .step-area {
@@ -1003,6 +1039,8 @@ header {
 @media(max-width: 340px) {
   .area-title {
     padding: 30px 10px;
+    margin-bottom: 20px;
+
     &:before {
       width: 30px;
       height: 30px;

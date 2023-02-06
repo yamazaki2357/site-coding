@@ -355,6 +355,36 @@ header .wrapper {
   font-weight: 300;
 }
 
+@media (max-width: 340px) {
+  .skill-contents .contents-area {
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .skill-contents .contents-area .content {
+    padding: 0px;
+    width: 50%;
+  }
+  .skill-contents .contents-area .content img {
+    height: 30px;
+  }
+  .skill-contents .contents-area .content p {
+    font-size: 12px;
+    padding: 0px;
+  }
+  .about-area p {
+    font-size: 15px;
+    padding: 0px 30px;
+  }
+  .about-area .about p {
+    font-size: 13px;
+    font-weight: normal;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+  }
+}
 .step-area {
   background-image: url(img/aboutsecondbg.jpg);
   background-size: cover;
@@ -933,6 +963,7 @@ header .wrapper {
 @media (max-width: 340px) {
   .area-title {
     padding: 30px 10px;
+    margin-bottom: 20px;
   }
   .area-title:before {
     width: 30px;
