@@ -22,7 +22,7 @@ header {
   float: right;
 }
 
-.header-right a {
+header .header-right a {
   text-decoration: none;
   color: black;
   line-height: 60px;

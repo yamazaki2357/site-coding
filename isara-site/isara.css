@@ -72,7 +72,6 @@ header {
   z-index: 10;
   background-color: #fff;
   height: 69px;
-  padding-bottom: 6px;
   margin: 0 auto;
   width: 100%;
 }
@@ -81,6 +80,7 @@ header .wrapper {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  padding: 0 10px 6px;
 }
 
 .header-left {
@@ -359,6 +359,11 @@ header .wrapper {
   text-align: center;
   background-color: #fef5e0;
   padding-bottom: 10px;
+  padding-top: 30px;
+}
+
+.merit-area .area-title p:first-child {
+  font-size: 16px;
 }
 
 .merit-contents {
@@ -376,7 +381,7 @@ header .wrapper {
   width: 730px;
   max-width: calc(100% - 40px);
   margin: 40px auto;
-  padding: 40px 20px;
+  padding: 10px 20px;
   background-color: #fff;
   border: 2px solid #ebb94d;
   border-radius: 5px;
@@ -634,17 +639,19 @@ header .wrapper {
 }
 
 .participation-box {
-  padding: 40px 40px 40px 0px;
+  padding-top: 25px;
+  display: flex;
   border: 2px solid #fff;
+  margin: 40px;
+  padding: 40px;
   max-width: 1170px;
-  margin: 0 auto;
+  justify-content: space-around;
 }
 .participation-box .box-item {
   width: 250px;
   height: 250px;
   background-color: #fff;
   padding: 0;
-  margin: 40px;
   text-align: center;
   display: inline-block;
   border-radius: 50%;
