@@ -131,6 +131,7 @@ header {
 }
 @media(max-width: 340px) {
   header {
+    position: fixed;
     height: 62px;
 
     .wrapper {
@@ -200,6 +201,29 @@ header {
       font-size: 20px;
       font-weight: 600;
       margin: 0;
+  }
+}
+@media(max-width: 340px) {
+  .main-image-area {
+    background-image: url('./img/mainsp.jpg');
+    height: 312px;
+    padding-top: 120px;
+    padding-bottom: 30px;
+
+    p.title {
+      font-size: 18px;
+      &:first-of-type {
+        padding-top: 0px;
+      }
+    }
+    img {
+      max-width: 317px;
+      width: 90%;
+      margin: 20px;
+    }
+    p {
+      font-size: 15px;
+    }
   }
 }
 // 請求ボタンエリア-------------------------
