@@ -205,7 +205,7 @@ header .wrapper {
   }
   .main-image-area img {
     max-width: 317px;
-    width: 90%;
+    width: 80%;
     margin: 20px;
   }
   .main-image-area p {
@@ -246,6 +246,25 @@ header .wrapper {
   color: #fff;
 }
 
+@media (max-width: 340px) {
+  .request-btn-area {
+    padding: 10px;
+  }
+  .request-btn-area p {
+    font-weight: normal;
+    font-size: 12px;
+  }
+  .request-btn-area p span {
+    font-weight: bold;
+  }
+  .request-btn-area p:nth-child(n+4) {
+    font-size: 12px;
+  }
+  .request-btn a {
+    padding: 20px;
+    letter-spacing: 3px;
+  }
+}
 .earning-power-area {
   background-image: url(./img/introbottom.jpg);
   background-size: cover;

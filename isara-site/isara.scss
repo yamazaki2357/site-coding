@@ -218,7 +218,7 @@ header {
     }
     img {
       max-width: 317px;
-      width: 90%;
+      width: 80%;
       margin: 20px;
     }
     p {
@@ -263,6 +263,26 @@ header {
     font-weight: 600;
     padding: 25px 250px;
     color: #fff;
+  }
+}
+
+@media(max-width: 340px) {
+  .request-btn-area {
+    padding: 10px;
+    p {
+      font-weight: normal;
+      font-size: 12px;
+      span {
+      font-weight: bold;
+      }
+      &:nth-child(n+4) {
+        font-size: 12px;
+      }
+    }
+  }
+  .request-btn a {
+      padding: 20px;
+      letter-spacing: 3px;
   }
 }
 // 「稼ぐ力」エリア-------------------------
