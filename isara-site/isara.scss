@@ -3,7 +3,6 @@
 // 全体用 -------------------------
 body {
   color: #333333;
-  background-color: gray;
   font-size: 14px;
 }
 
@@ -307,7 +306,14 @@ header {
       background: linear-gradient(transparent 70%, #ebb94d 70%);
     }
   }
-
+}
+@media(max-width: 340px) {
+.earning-power-area {
+  height: 650px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+}
 }
 // aboutエリア -------------------------
 .about-area {
@@ -992,4 +998,18 @@ header {
   font-weight: 300;
   margin-bottom: 0;
   padding-bottom: 5px;
+}
+
+@media(max-width: 340px) {
+  .area-title {
+    padding: 30px 10px;
+    &:before {
+      width: 30px;
+      height: 30px;
+    }
+    &:after {
+      width: 30px;
+      height: 30px;
+    }
+  }
 }
