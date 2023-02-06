@@ -2,6 +2,7 @@
 @import url(../style.css);
 body {
   color: #333333;
+  background-color: gray;
   font-size: 14px;
 }
 
@@ -115,6 +116,52 @@ header .wrapper {
   padding: 0 40px;
 }
 
+.contact-sp {
+  display: none;
+}
+
+@media (max-width: 340px) {
+  header {
+    height: 62px;
+  }
+  header .wrapper {
+    padding: 0px;
+  }
+  .header-left {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    padding: 10px 0 10px 10px;
+  }
+  .header-left img {
+    width: 90px;
+    height: 45px;
+  }
+  .header-left p {
+    font-weight: 600;
+    font-size: 10px;
+    padding-top: 10px;
+  }
+  .contact-pc {
+    display: none;
+  }
+  .contact-sp {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+    background-color: #da6b64;
+    color: white;
+  }
+  .contact-sp img {
+    width: 20px;
+  }
+  .contact-sp p {
+    margin: 0;
+    font-weight: 100;
+    font-size: 12px;
+  }
+}
 .main-image-area {
   background-image: url("./img/main.jpg");
   background-position: center;
@@ -611,6 +658,11 @@ header .wrapper {
   width: 70%;
 }
 
+@media (max-width: 340px) {
+  .flow-image {
+    display: none;
+  }
+}
 .reason-area {
   background-image: url(img/bangkokbg.jpg);
   background-position: center;
