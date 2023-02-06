@@ -474,6 +474,16 @@ header .wrapper {
   font-weight: 600;
 }
 
+@media (max-width: 340px) {
+  .step-text {
+    padding: 20px 0;
+  }
+  .step-text p {
+    font-size: 14px;
+    padding: 0 15px;
+    font-weight: normal;
+  }
+}
 .study-area {
   text-align: center;
   padding: 40px 0;
@@ -490,6 +500,18 @@ header .wrapper {
   margin-bottom: 10px;
 }
 
+@media (max-width: 340px) {
+  .study-area h2 {
+    font-size: 18px;
+  }
+  .study-area h2 span {
+    font-size: 12px;
+  }
+  .study-area p {
+    padding: 0 15px;
+    font-size: 12px;
+  }
+}
 .study-contents {
   padding: 0;
   width: 860px;
@@ -510,6 +532,20 @@ header .wrapper {
   font-size: 16px;
 }
 
+@media (max-width: 340px) {
+  .study-contents {
+    width: 100%;
+    max-width: none;
+  }
+  .study-contents .study-content img {
+    width: 70px;
+    height: 70px;
+  }
+  .study-contents p {
+    margin-top: 20px;
+    font-size: 13px;
+  }
+}
 .merit-area {
   text-align: center;
   background-color: #fef5e0;

@@ -517,6 +517,17 @@ header {
   }
 }
 
+@media(max-width: 340px) {
+  .step-text {
+    padding: 20px 0;
+
+    p {
+      font-size: 14px;
+      padding: 0 15px;
+      font-weight: normal;
+    }
+  }
+}
 // メリットエリア-------------------------
 .study-area {
   text-align: center;
@@ -532,6 +543,20 @@ header {
   p {
     font-size: 20px;
     margin-bottom: 10px;
+  }
+}
+@media(max-width: 340px) {
+  .study-area {
+    h2 {
+      font-size: 18px;
+      span {
+        font-size: 12px;
+      }
+    }
+    p {
+      padding: 0 15px;
+      font-size: 12px;
+    }
   }
 }
 
@@ -554,6 +579,23 @@ header {
     margin-top: 40px;
     font-weight: 600;
     font-size: 16px;
+  }
+}
+@media(max-width: 340px) {
+  .study-contents {
+    width: 100%;
+    max-width: none;
+
+    .study-content {
+      img {
+        width: 70px;
+        height: 70px;
+      }
+    }
+    p {
+      margin-top: 20px;
+      font-size: 13px;
+    }
   }
 }
 
