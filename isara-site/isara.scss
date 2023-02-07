@@ -603,8 +603,13 @@ header {
 .merit-area {
   text-align: center;
   background-color: #fef5e0;
-  padding-bottom: 10px;
-  padding-top: 30px;
+  padding: 30px 30px 10px;
+}
+
+@media(max-width: 340px) {
+  .area-title p {
+  font-size: 18px;
+}
 }
 .area-title p:first-child {
   font-size: 16px;
@@ -617,6 +622,21 @@ header {
     width: 25%;
     h4 {
       color: #ebb94d;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
+@media(max-width: 340px) {
+  .merit-contents {
+    flex-direction: column;
+
+    .merit-content {
+      width: 100%;
+      p {
+        padding: 0 30px;
+      }
     }
   }
 }
@@ -640,6 +660,19 @@ header {
     font-weight: 600;
   }
 }
+
+@media(max-width: 340px) {
+  .support-area {
+    width: 100%;
+    margin: 0 auto;
+  h3 {
+      font-size: 22px;
+    }
+  p {
+    font-size: 12px;
+  }
+  }
+}
 // 創業メンバーエリア-------------------------
 .members-area {
   padding: 40px 0;
@@ -648,12 +681,10 @@ header {
   background-size: cover;
   color: #fff;
   text-align: center;
-
   h2 {
     font-size: 24px;
     font-weight: 600;
   }
-
   img {
     
     border-radius: 50%;
@@ -663,6 +694,17 @@ header {
     height: auto;
     max-width: 100%;
     max-height: 100%;
+  }
+}
+@media(max-width: 340px) {
+.members-area {
+    p {
+      padding: 0px 15px;
+      font-size: 12px;
+    }
+    img {
+      width: 120px;
+    }
   }
 }
 
@@ -678,7 +720,15 @@ header {
     text-align: left
   }
 }
-
+@media(max-width: 340px) {
+  .member-wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+.member {
+  padding: 25px 0 0;
+}
+}
 // questionエリア-------------------------
 .question-area {
   position: relative;
@@ -729,7 +779,16 @@ header {
     font-size: 20px;
   }
 }
-
+@media(max-width: 340px) {
+  .question-area {
+    .area-title {
+      p {
+        font-size: 15px;
+        font-weight: normal;
+      }
+    }
+  }
+}
 // answerエリア-------------------------
 .answer-area {
   text-align: center;
@@ -762,7 +821,25 @@ header {
     }
   }
 }
-
+@media(max-width: 340px) {
+  .answer-area {
+    h2 {
+      font-size: 18px;
+    }
+    .answer {
+      .answer-text {
+        padding: 0 15px 0;
+        p {
+          font-size: 15px;
+          margin-top: 0px;
+        }
+      }
+      img {
+        height: 30%;
+      }
+    }
+  }
+}
 // learning-contentsエリア-------------------------
 .learning-contents-area {
   color: #fff;
@@ -772,7 +849,13 @@ header {
   background-position: center;
   background-size: cover;
 }
-
+@media(max-width: 340px) {
+  .learning-contents-area {
+    h2 {
+      font-size: 18px;
+    }
+  }
+}
 .learning-content {
   display: flex;
   flex-direction: column;
@@ -816,6 +899,18 @@ header {
       border-bottom: 1px dotted #e5e5e5;
       margin: 0px;
       padding: 10px;
+    }
+  }
+}
+@media(max-width: 340px) {
+  .learning-content {
+    .before-travel,
+    .traveling{
+      width: 90%;
+      .content-title p {
+        font-size: 15px;
+        font-weight: normal;
+      }
     }
   }
 }

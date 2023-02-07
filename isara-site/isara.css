@@ -549,10 +549,14 @@ header .wrapper {
 .merit-area {
   text-align: center;
   background-color: #fef5e0;
-  padding-bottom: 10px;
-  padding-top: 30px;
+  padding: 30px 30px 10px;
 }
 
+@media (max-width: 340px) {
+  .area-title p {
+    font-size: 18px;
+  }
+}
 .area-title p:first-child {
   font-size: 16px;
 }
@@ -567,7 +571,21 @@ header .wrapper {
 .merit-contents .merit-content h4 {
   color: #ebb94d;
 }
+.merit-contents .merit-content img {
+  width: 100%;
+}
 
+@media (max-width: 340px) {
+  .merit-contents {
+    flex-direction: column;
+  }
+  .merit-contents .merit-content {
+    width: 100%;
+  }
+  .merit-contents .merit-content p {
+    padding: 0 30px;
+  }
+}
 .support-area {
   width: 730px;
   max-width: calc(100% - 40px);
@@ -587,6 +605,18 @@ header .wrapper {
   font-weight: 600;
 }
 
+@media (max-width: 340px) {
+  .support-area {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .support-area h3 {
+    font-size: 22px;
+  }
+  .support-area p {
+    font-size: 12px;
+  }
+}
 .members-area {
   padding: 40px 0;
   background-image: url(img/teacherbg.jpg);
@@ -609,6 +639,15 @@ header .wrapper {
   max-height: 100%;
 }
 
+@media (max-width: 340px) {
+  .members-area p {
+    padding: 0px 15px;
+    font-size: 12px;
+  }
+  .members-area img {
+    width: 120px;
+  }
+}
 .member-wrapper {
   width: 80%;
   margin: 40px auto;
@@ -622,6 +661,15 @@ header .wrapper {
   text-align: left;
 }
 
+@media (max-width: 340px) {
+  .member-wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .member {
+    padding: 25px 0 0;
+  }
+}
 .question-area {
   position: relative;
   padding: 40px 0;
@@ -666,6 +714,12 @@ header .wrapper {
   font-size: 20px;
 }
 
+@media (max-width: 340px) {
+  .question-area .area-title p {
+    font-size: 15px;
+    font-weight: normal;
+  }
+}
 .answer-area {
   text-align: center;
   margin: 40px auto;
@@ -696,6 +750,21 @@ header .wrapper {
   text-decoration: underline;
 }
 
+@media (max-width: 340px) {
+  .answer-area h2 {
+    font-size: 18px;
+  }
+  .answer-area .answer .answer-text {
+    padding: 0 15px 0;
+  }
+  .answer-area .answer .answer-text p {
+    font-size: 15px;
+    margin-top: 0px;
+  }
+  .answer-area .answer img {
+    height: 30%;
+  }
+}
 .learning-contents-area {
   color: #fff;
   text-align: center;
@@ -705,6 +774,11 @@ header .wrapper {
   background-size: cover;
 }
 
+@media (max-width: 340px) {
+  .learning-contents-area h2 {
+    font-size: 18px;
+  }
+}
 .learning-content {
   display: flex;
   flex-direction: column;
@@ -750,6 +824,17 @@ header .wrapper {
   padding: 10px;
 }
 
+@media (max-width: 340px) {
+  .learning-content .before-travel,
+.learning-content .traveling {
+    width: 90%;
+  }
+  .learning-content .before-travel .content-title p,
+.learning-content .traveling .content-title p {
+    font-size: 15px;
+    font-weight: normal;
+  }
+}
 .support-message-area {
   background-color: #016ea9;
   padding: 40px 0;
