@@ -7,6 +7,10 @@ $(function() {
     $('.site-display').eq(clickedIndex).addClass('active');
 
     adjusted_height(); /* 高さ自動調整 */
+
+    $('html, body').animate({
+      'scrollTop': '300'
+    }, 1000);
   });
 
   // メインエリアの高さ自動調整
