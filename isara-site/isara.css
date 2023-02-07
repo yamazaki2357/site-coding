@@ -847,6 +847,11 @@ header .wrapper {
   font-weight: 600;
 }
 
+@media (max-width: 340px) {
+  .support-message-area p {
+    font-size: 15px;
+  }
+}
 .courses-flow-area {
   text-align: center;
   padding: 40px 0;
@@ -888,7 +893,7 @@ header .wrapper {
 }
 
 @media (max-width: 340px) {
-  .flow-image {
+  .courses-flow-area {
     display: none;
   }
 }
@@ -900,6 +905,15 @@ header .wrapper {
   color: #fff;
 }
 
+@media (max-width: 340px) {
+  .reason-area {
+    padding: 30px;
+  }
+  .reason-area h2 {
+    font-weight: normal;
+    font-size: 24px;
+  }
+}
 .participation-area {
   background-size: 300px auto;
   padding: 40px 0;
@@ -919,6 +933,15 @@ header .wrapper {
   color: #fff;
 }
 
+@media (max-width: 340px) {
+  .participation-area h2 {
+    font-size: 24px;
+  }
+  .participation-area h3 {
+    font-size: 18px;
+    width: 70%;
+  }
+}
 .participation-box {
   padding-top: 25px;
   display: flex;
@@ -948,6 +971,22 @@ header .wrapper {
   padding: 0 24px;
 }
 
+@media (max-width: 340px) {
+  .participation-box {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .participation-box .box-item {
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+  }
+  .participation-box .box-item h4 {
+    margin-bottom: 10px;
+  }
+}
 .value-area {
   text-align: center;
   padding: 40px 0;
@@ -965,6 +1004,15 @@ header .wrapper {
   border-right: 4px solid #fff;
 }
 
+@media (max-width: 340px) {
+  .value-area {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .value-area h2 {
+    font-size: 18px;
+  }
+}
 .message-area {
   text-align: center;
   text-align: center;
@@ -974,6 +1022,11 @@ header .wrapper {
   margin-bottom: 30px;
 }
 
+@media (max-width: 340px) {
+  .message-area h2 {
+    font-size: 24px;
+  }
+}
 .message-wrapper {
   display: flex;
   max-width: 1028px;
@@ -992,6 +1045,15 @@ header .wrapper {
   padding: 20px;
 }
 
+@media (max-width: 340px) {
+  .message-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .message-image img {
+    padding: 0 20px;
+  }
+}
 .asked-question-area {
   padding: 40px 10%;
   text-align: center;
@@ -1011,6 +1073,14 @@ header .wrapper {
   margin-bottom: 30px;
 }
 
+@media (max-width: 340px) {
+  .request-information-area {
+    padding: 40px 20px;
+  }
+  .request-information-area h2 {
+    font-size: 24px;
+  }
+}
 .form-area {
   width: 100%;
   text-align: center;
@@ -1033,6 +1103,11 @@ header .wrapper {
   border: none;
 }
 
+@media (max-width: 340px) {
+  .form-area {
+    width: 93%;
+  }
+}
 .form-btn {
   background-color: #da6b64;
   color: #fff;
@@ -1048,10 +1123,20 @@ header .wrapper {
   text-align: center;
 }
 
+@media (max-width: 340px) {
+  .questions {
+    padding: 30px 0px;
+  }
+}
 .questions .txtl {
   margin-bottom: 40px;
 }
 
+@media (max-width: 340px) {
+  .questions .txtl {
+    font-size: 24px;
+  }
+}
 .questions-list {
   width: 1170px;
   max-width: calc(100% - 40px);
@@ -1081,6 +1166,11 @@ header .wrapper {
   color: black;
 }
 
+@media (max-width: 340px) {
+  .questionsheading h4 {
+    margin: 5px;
+  }
+}
 .questionstoggle a:before {
   content: "○";
   float: left;
