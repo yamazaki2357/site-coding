@@ -2,6 +2,7 @@ $(function() {
   // メインエリア表示切り替え
   $('.index-btn').click(function() {
     $('.active').removeClass('active');
+    // TODO:動的にactive　IDを付け替える
 
     var clickedIndex = $('.index-btn').index($(this));
     $('.site-display').eq(clickedIndex).addClass('active');
@@ -15,20 +16,9 @@ $(function() {
 
   // メインエリアの高さ自動調整
   function adjusted_height() {
-    var site_size = document.getElementsByClassName('active'); /* ドキュメントの高さを取得 */
+    const site_size = document.getElementById("active").childNodes; /* ドキュメントの高さを取得 */
 
-    if (site_size[0].classList.contains("very-large-site")) {
-      site_size[0].style.height = "3000px";
-    } else if (site_size[0].classList.contains("large-site")) {
-      site_size[0].style.height = "2500px";
-    } else if (site_size[0].classList.contains("small-site")) {
-      site_size[0].style.height = "1500px";
-    } else {
-      site_size[0].style.height = "2000px";
-    }
-
-    // HACK: 要素の高さを自動取得して代入する。
-    // site_size[0].style.height = site_size[0].contentWindow.document.body.scrollHeight + "px";
+    site_size[1].style.height = site_size[1].contentWindow.document.body.scrollHeight + "px";
   }
 
   // スクロールボタン
