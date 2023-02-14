@@ -33,7 +33,7 @@
   box-shadow: 5px 5px;
   transition: 0.01s;
 }
-.img-btn:hover .logo-style {
+.img-btn:hover .logo-developed {
   display: none;
 }
 
@@ -59,6 +59,7 @@
 .site-display {
   width: 100%;
   margin: 0 auto;
+  text-align: center;
   display: none;
 }
 
@@ -80,7 +81,13 @@ iframe {
 
 .active {
   display: block;
-  height: 2000px;
+  height: 1000px;
+}
+
+.import-slide {
+  max-width: 100vh;
+  max-height: 90vh;
+  width: 100%;
 }
 
 /* --------- サイドメニュー --------- */
@@ -181,7 +188,6 @@ iframe {
 }
 
 .container {
-  /* max-width: 1380px;TODO: トップ画面修正 */
   width: 100%;
   margin: 0 auto;
   opacity: 0.6;
@@ -207,7 +213,7 @@ iframe {
   display: flex;
   justify-content: space-between;
 }
-.logo-style {
+.logo-developed {
   position: absolute;
   left: 0;
   bottom: 16%;
@@ -216,6 +222,9 @@ iframe {
   color: #fff;
   font-weight: bold;
 }
-.used {
+.by-my {
   background-color: red;
+}
+.by-others {
+  background-color:rgb(141, 139, 139)
 }
