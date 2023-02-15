@@ -37,10 +37,10 @@ $(function() {
     var siteImgs = document.getElementsByClassName('site-img');
     var i = 1;
 
-    for (let img of siteImgs) {
-      img.setAttribute('src', "./img/no-image-" + i + ".png");
-      i++;
-    }
+    // for (let img of siteImgs) {
+    //   img.setAttribute('src', "./img/small-" + i + ".png");
+    //   i++;
+    // }
 
     adjusted_height(); /* 高さ自動調整 */
   });
