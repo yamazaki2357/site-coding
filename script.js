@@ -2,16 +2,15 @@ $(function() {
   // メインエリア表示切り替え
   $('.index-btn').click(function() {
     $('.active').removeClass('active');
-    // TODO:動的にactive　IDを付け替える
 
     var clickedIndex = $('.index-btn').index($(this));
     $('.site-display').eq(clickedIndex).addClass('active');
 
     adjusted_height(); /* 高さ自動調整 */
 
-    $('html, body').animate({
-      'scrollTop': '300'
-    }, 1000);
+    // $('html, body').animate({
+    //   'scrollTop': '300'
+    // }, 1000);
   });
 
   // メインエリアの高さ自動調整
@@ -28,14 +27,13 @@ $(function() {
     }, 300);
   });
 
-  // サイドボタン
-  // スマホ版が押されたら
+  // スマホ版ボタン
   $('.small-size-btn').click(function() {
     $('.site-display').removeClass('pc-size');
     $('.site-display').addClass('small-size');
 
-    var siteImgs = document.getElementsByClassName('site-img');
-    var i = 1;
+    // var siteImgs = document.getElementsByClassName('site-img');
+    // var i = 1;
 
     // for (let img of siteImgs) {
     //   img.setAttribute('src', "./img/small-" + i + ".png");
@@ -44,7 +42,7 @@ $(function() {
 
     adjusted_height(); /* 高さ自動調整 */
   });
-  // PC版が押されたら
+  // PC版ボタン
   $('.pc-size-btn').click(function() {
     $('.site-display').removeClass('small-size');
     $('.site-display').addClass('pc-size');
