@@ -1,5 +1,4 @@
 @import url(../style.css);
-@import url(responsive-profile-site.css);
 
 /* --------- ヘッダー --------- */
 header {
@@ -102,3 +101,24 @@ footer p {
   font-size: 10px;
 }
 
+@media(max-width: 640px) {
+  h1 {
+    font-size: 23px;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+  .recipe-img {
+    width: 100%;
+  }
+
+  .recipe-img img {
+    height: auto;
+  }
+
+  .recipe-text {
+    width: auto;
+  }
+}

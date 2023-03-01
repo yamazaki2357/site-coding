@@ -33,6 +33,7 @@
   box-shadow: 5px 5px;
   transition: 0.01s;
 }
+
 .img-btn:hover .logo-developed {
   display: none;
 }
@@ -63,7 +64,7 @@
   display: none;
 }
 
-.import-site {
+.import {
   width: 100%;
 }
 
@@ -213,6 +214,7 @@ iframe {
   display: flex;
   justify-content: space-between;
 }
+
 .logo-developed {
   position: absolute;
   left: 0;
@@ -222,9 +224,11 @@ iframe {
   color: #fff;
   font-weight: bold;
 }
+
 .by-my {
   background-color: red;
 }
+
 .by-others {
-  background-color:rgb(141, 139, 139)
+  background-color: rgb(141, 139, 139)
 }

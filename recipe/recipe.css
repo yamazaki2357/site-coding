@@ -114,3 +114,24 @@ footer p {
   font-size: 12px;
 }
 
+@media(max-width: 640px) {
+  h1 {
+    font-size: 23px;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+  .recipe-img {
+    width: 100%;
+  }
+
+  .recipe-img img {
+    height: auto;
+  }
+
+  .recipe-text {
+    width: auto;
+  }
+}
