@@ -2,30 +2,24 @@ body {
   font-family: "Noto Serif JP", serif;
   background-color: #e6e2d7;
 }
-
 body a {
   color: #fff;
 }
-
 body h2 {
-  -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
   display: block;
 }
-
 body h2 span.en {
   font-size: 15px;
   font-weight: normal;
   display: block;
 }
-
 body h2 span.ja {
   letter-spacing: 4px;
   font-size: 36px;
   font-weight: normal;
   display: block;
 }
-
 body .logo {
   width: 40px;
   height: 92px;
@@ -36,7 +30,6 @@ header {
   height: 100vh;
   max-height: 1400px;
   color: white;
-  -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
   background-image: url(https://code-step.com/demo/html/store3/img/mainvisual-pc.jpg);
   background-size: cover;
@@ -44,23 +37,18 @@ header {
   margin-bottom: 180px;
   position: relative;
 }
-
 header .top-text {
   margin: 60px 80px 0 0;
 }
-
 header .top-text .logo {
   margin-left: 80px;
 }
-
 header .top-text .site-link {
   font-size: 16px;
 }
-
 header .top-text .site-link li {
   margin-left: 25px;
 }
-
 header .online-store {
   position: absolute;
   left: 40px;
@@ -68,7 +56,6 @@ header .online-store {
   background-color: #333333;
   padding: 8px;
 }
-
 header .online-store a {
   border: 1px solid #ccc;
   padding: 30px 18px;
@@ -82,23 +69,18 @@ header .online-store a {
   display: flex;
   flex-direction: row-reverse;
 }
-
 .news h2 .en {
   margin-right: 20px;
 }
-
 .news dl {
-  -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
   border-right: 1px solid #000;
   margin: 80px 100px 0 0;
 }
-
 .news dl dt {
   font-size: 12px;
   margin-right: 20px;
 }
-
 .news dl dd {
   border-left: 1px solid #000;
   padding: 0px 5px 0px 25px;
@@ -112,35 +94,29 @@ header .online-store a {
   max-width: 1024px;
   margin: 0 auto 180px auto;
 }
-
 .new-values h2 {
   font-size: 32px;
   display: flex;
   margin-left: 10px;
 }
-
 .new-values h2 span.ja {
   display: block;
 }
-
 .new-values h2 span.en {
   display: block;
   line-height: 50px;
   padding-top: 20px;
 }
-
 .new-values .new-values-img {
   width: 65%;
   position: relative;
   margin-top: 100px;
   text-align: center;
 }
-
 .new-values .new-values-img img {
   width: 100%;
   vertical-align: bottom;
 }
-
 .new-values .new-values-img p {
   position: absolute;
   bottom: -35px;
@@ -160,30 +136,25 @@ header .online-store a {
   max-width: 1024px;
   margin: 0 auto 180px auto;
 }
-
 .harmony h2 {
   font-size: 32px;
   display: flex;
   margin-right: 10px;
 }
-
 .harmony h2 span.en {
   line-height: 53px;
   padding-top: 20px;
 }
-
 .harmony .harmony-img {
   width: 65%;
   position: relative;
   margin-top: 100px;
   text-align: center;
 }
-
 .harmony .harmony-img img {
   width: 100%;
   vertical-align: bottom;
 }
-
 .harmony .harmony-img p {
   position: absolute;
   bottom: -35px;
@@ -200,7 +171,6 @@ header .online-store a {
   width: 100%;
   height: 100%;
 }
-
 .map-area iframe {
   vertical-align: bottom;
   width: 100%;
@@ -211,40 +181,32 @@ header .online-store a {
   background-color: black;
   color: white;
   width: 100%;
-  -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
   padding-top: 80px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
 }
-
 .bottom-creation .logo {
   margin: 0 80px 0 80px;
 }
-
 .bottom-creation .contact {
   margin-left: 80px;
   font-size: 14px;
 }
-
-.bottom-creation ul>li {
+.bottom-creation ul > li {
   line-height: 2;
 }
-
 .bottom-creation .site-link {
   font-size: 16px;
 }
-
 .bottom-creation .site-link li {
   margin-left: 25px;
 }
-
 .bottom-creation .online-store {
   padding-left: 30px;
   font-size: 14px;
 }
-
 .bottom-creation .online-store a:first-child {
   border-bottom: 1px solid white;
   padding-bottom: 5px;
@@ -255,7 +217,6 @@ footer {
   height: 40px;
   text-align: center;
 }
-
 footer p {
   font-size: 10px;
   color: #fff;
@@ -266,137 +227,106 @@ footer p {
   body h2 span.en {
     font-size: 14px;
   }
-
   body h2 span.ja {
     font-size: 24px;
   }
-
   header {
     max-height: 600px;
     background-image: url(https://code-step.com/demo/html/store3/img/mainvisual-sp.jpg);
     margin-bottom: 80px;
   }
-
   header .top-text {
     margin: 20px 20px 0 0;
   }
-
   header .top-text .logo {
     margin-left: 60px;
   }
-
   header .online-store {
     left: 20px;
     bottom: 20px;
   }
-
   .news {
     margin-bottom: 80px;
   }
-
   .news h2 span.ja {
     font-size: 28px;
   }
-
   .news dl {
     margin: 20px 30px 0 0;
   }
-
   .news dl dt {
     margin-right: 12px;
     padding-top: 15px;
   }
-
   .news dl dt:nth-of-type(n + 4) {
     display: none;
   }
-
   .news dl dd {
     padding-left: 12px;
     padding-top: 15px;
   }
-
   .news dl dd:nth-of-type(n + 4) {
     display: none;
   }
-
   .new-values {
     margin-bottom: 80px;
   }
-
   .new-values h2 {
     margin-left: 0px;
   }
-
   .new-values h2 span.en {
     display: none;
   }
-
   .new-values .new-values-img {
     width: 90%;
     margin-top: 70px;
   }
-
   .new-values .new-values-img img {
     padding-left: 20px;
     width: 90%;
   }
-
   .new-values .new-values-img p {
     padding: 25px 30px;
     font-size: 14px;
     left: 10px;
   }
-
   .harmony {
     margin-bottom: 80px;
   }
-
   .harmony h2 {
     margin-right: 0px;
   }
-
   .harmony h2 span.en {
     display: none;
   }
-
   .harmony .harmony-img {
     width: 90%;
     margin-top: 70px;
   }
-
   .harmony .harmony-img img {
     padding-right: 20px;
     width: 90%;
   }
-
   .harmony .harmony-img p {
     padding: 25px 30px;
     font-size: 14px;
     right: 10px;
   }
-
   .bottom-creation {
     padding-top: 40px;
   }
-
   .bottom-creation .logo {
     margin: 0 20px 0 20px;
   }
-
   .bottom-creation .contact {
     margin-left: 25px;
   }
-
   .bottom-creation .site-link li {
     margin-left: 10px;
     font-size: 14px;
     line-height: normal;
   }
-
   .bottom-creation .online-store {
     padding-left: 20px;
   }
-}
-
-/*# sourceMappingURL=store.css.map */
+}/*# sourceMappingURL=store.css.map */

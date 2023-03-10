@@ -244,7 +244,6 @@ header .wrapper {
   padding: 25px 250px;
   color: #fff;
 }
-
 @media (max-width: 340px) {
   .request-btn-area {
     padding: 10px;
@@ -826,11 +825,11 @@ header .wrapper {
 
 @media (max-width: 340px) {
   .learning-content .before-travel,
-.learning-content .traveling {
+  .learning-content .traveling {
     width: 90%;
   }
   .learning-content .before-travel .content-title p,
-.learning-content .traveling .content-title p {
+  .learning-content .traveling .content-title p {
     font-size: 15px;
     font-weight: normal;
   }

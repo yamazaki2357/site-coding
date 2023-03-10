@@ -1,5 +1,7 @@
 /* --------- 全体用 --------- */
-*, :after, :before {
+*,
+:after,
+:before {
   background-repeat: no-repeat;
   box-sizing: inherit;
 }
@@ -12,6 +14,30 @@ body {
 
 a {
   text-decoration: none;
+}
+
+@media (max-width: 340px) {
+  .request-btn-area {
+    padding: 10px;
+  }
+
+  .request-btn-area p {
+    font-weight: normal;
+    font-size: 12px;
+  }
+
+  .request-btn-area p span {
+    font-weight: bold;
+  }
+
+  .request-btn-area p:nth-child(n+4) {
+    font-size: 12px;
+  }
+
+  .request-btn a {
+    padding: 20px;
+    letter-spacing: 3px;
+  }
 }
 
 h2 {
@@ -27,18 +53,22 @@ p {
   font-size: 14px;
 }
 
-ul, ol, dl, dt, dd {
+ul,
+ol,
+dl,
+dt,
+dd {
   margin: 0;
   padding: 0;
 }
 
 section {
   margin: 0;
-    padding: 0;
+  padding: 0;
 }
 
 li {
-  list-style:none
+  list-style: none
 }
 
 /* .container {
@@ -55,4 +85,3 @@ textarea::placeholder {
 .bold {
   font-weight: 600;
 }
-

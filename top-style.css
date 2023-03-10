@@ -1,17 +1,28 @@
 /* --------- サイト一覧 --------- */
-.content ul {
+.main-image-area {
   display: flex;
   justify-content: center;
 }
 
-.content li {
-  width: 15%;
-  margin: 0 20px;
-  float: left;
-  position: relative;
+@media(max-width: 420px) {
+  .main-image-area {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
-/* TODO: レスポンシブにする */
+.main-image-area li {
+  width: 15%;
+  margin: 0 20px;
+}
+
+@media(max-width: 420px) {
+  .main-image-area li {
+    width: 90%;
+    text-align: center;
+  }
+}
+
 .img-btn {
   cursor: pointer;
   max-width: 340px;
@@ -26,6 +37,13 @@
   vertical-align: bottom;
   border: 1px solid #ccc;
   background-color: rgb(239, 239, 239);
+}
+
+@media (max-width: 420px) {
+  .site-img {
+    width: 300px;
+    height: 300px;
+  }
 }
 
 .img-btn:hover {
@@ -52,6 +70,12 @@
   margin: 5px 0;
 }
 
+@media (max-width: 420px) {
+  .site-title p {
+    padding-bottom: 20px;
+  }
+}
+
 /* --------- メイン表示 --------- */
 .main-show {
   border-top: 1px solid rgb(141, 139, 139);
@@ -62,6 +86,17 @@
   margin: 0 auto;
   text-align: center;
   display: none;
+}
+
+@media (max-width: 420px) {
+  .site-display {
+    width: 320px;
+  }
+
+  .explanatory-slide {
+    width: 100%;
+    height: 600px !important;
+  }
 }
 
 .import {
@@ -109,6 +144,12 @@ iframe {
   border-bottom-left-radius: 18px;
 }
 
+@media (max-width: 420px) {
+  .side-menu {
+    display: none;
+  }
+}
+
 .side-menu li {
   padding: 10px 0px 23px 0px;
   letter-spacing: 0.2em;
@@ -138,6 +179,12 @@ iframe {
   z-index: 2;
 }
 
+@media (max-width: 420px) {
+  .page-top {
+    display: none;
+  }
+}
+
 .page-top__arrow {
   height: 10px;
   width: 10px;
@@ -160,6 +207,16 @@ iframe {
   display: block;
 }
 
+@media (max-width: 420px) {
+  .site-hide {
+    display: none;
+  }
+
+  .site-hide ul {
+    display: none;
+  }
+}
+
 #more {
   width: 120px;
   margin: 20px auto;
@@ -171,6 +228,12 @@ iframe {
   outline: 0;
   transition: .5s;
   border-radius: 5px;
+}
+
+@media (max-width: 420px) {
+  #more {
+    display: none;
+  }
 }
 
 #more:hover {
@@ -207,28 +270,4 @@ iframe {
 .infinite-slider .swiper-slide img {
   width: auto;
   height: 100%;
-}
-
-/* --------- ロゴ --------- */
-.site-title {
-  display: flex;
-  justify-content: space-between;
-}
-
-.logo-developed {
-  position: absolute;
-  left: 0;
-  bottom: 16%;
-  border-radius: 3px;
-  padding: 5px 10px;
-  color: #fff;
-  font-weight: bold;
-}
-
-.by-my {
-  background-color: red;
-}
-
-.by-others {
-  background-color: rgb(141, 139, 139)
 }
