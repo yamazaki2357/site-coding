@@ -3,17 +3,22 @@
 
 [**https://coding-together.netlify.app/**](https://coding-together.netlify.app/)
 
-![スクリーンショット 2023-02-20 23.38.36.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/220e6320-0692-4023-930a-8a8d938f9011/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2023-02-20_23.38.36.png)
+<img src="https://github.com/yamazaki2357/site-coding/blob/main/img/site-img.png">
 
 ## 概要
 
 就労移行支援ITスクール金沢に向けて、共同開発の題材を提案するための模擬サイトです。
+<br><br>
 
 ## アピールポイント
 
 - 主体的に考えて行動できる
+
 - ニーズを汲み取ってサービスに落とし込める
+
 - 考えを資料にまとめて伝えられる「[**解説用スライド**](https://slides.com/yamazaki2357/palette-be0bc0) 」
+
+<br>
 
 ## このサービスを制作した背景
 
